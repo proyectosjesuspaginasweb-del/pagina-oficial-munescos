@@ -1,0 +1,174 @@
+@font-face{
+    font-family: "Indie_Flower";
+    src: url(./fonts/Indie_Flower/IndieFlower-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "Lobster";
+    src: url(./fonts/Lobster/Lobster-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "Share_Tech";
+    src: url(./fonts/Lobster_Pacifico_Share_Tech/Share_Tech/ShareTech-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    --Blanco: white;
+    --Rosa: pink;
+    --Amarillo: yellow;
+    --Gris: rgb(131, 131, 131); 
+    --Rosa-fuerte: rgb(250, 0, 146);
+}
+
+/*Inicio de portada de muñecos XO*/
+
+body{
+    background: linear-gradient(37deg,rgba(250, 87, 185, 1) 0%, rgba(217, 134, 181, 1) 25%, rgba(242, 10, 161, 1) 74%);
+}
+
+.container-fluid{/*contenedor principal*/
+    /* border: 2px solid var(--Gris); */
+    max-width: 100vw;
+    height: 100vh;
+}
+
+.primary-nav-who{
+    /* border: 2px solid var(--Gris); */
+    max-width: 100vw;
+    height: 100vh;
+}
+
+.welcom-primary{
+    /* border: 1px solid blue; */
+    height: 78vh;
+}
+
+.letters-welcomen{/*contenedor de letrero de welcomen*/
+    font-family: Lobster;
+    font-size: 65px;
+}
+
+.letters-welcomen > span{/*letras span de letrero*/
+    color: white;
+    animation: welcomeAnimation 1.5s linear infinite;
+}
+
+
+@keyframes welcomeAnimation{
+    0% {
+        color: var(--Rosa-Para-Letra);
+        text-shadow: 0 0 12px rgb(207, 59, 84), 0 0 50px rgb(231, 55, 217), 0 0 100px rgb(167, 89, 156);
+    }10%, 90%{
+        color: rgba(255, 255, 255, 0.884);
+        text-shadow: none;
+    }
+}
+
+.letters-welcomen > span:nth-child(1){/*B1*/
+    animation-delay: .1s;
+}   
+
+.letters-welcomen > span:nth-child(2){/*B1*/
+    animation-delay: .2s;
+}   
+
+.letters-welcomen > span:nth-child(3){/*B1*/
+    animation-delay: .3s;
+}   
+
+.letters-welcomen > span:nth-child(4){/*B1*/
+    animation-delay: .4s;
+}   
+
+.letters-welcomen > span:nth-child(5){/*B1*/
+    animation-delay: .5s;
+}   
+
+.letters-welcomen > span:nth-child(6){/*B1*/
+    animation-delay: .6s;
+}   
+
+.letters-welcomen > span:nth-child(7){/*B1*/
+    animation-delay: .5s;
+}   
+
+
+.letters-welcomen > span:nth-child(8){/*o*/
+    animation-delay: .4s;
+}
+
+.letters-welcomen > span:nth-child(9){/*B1*/
+    animation-delay: .3s;
+}   
+
+.letters-welcomen > span:nth-child(10){/*B1*/
+    animation-delay: .2s;
+}   
+
+.creator-img{
+    /* border: 2px solid orange; */
+    max-width: 100vw;
+    height: 20vh;
+}
+
+.img-creator{
+    max-width: 6rem;
+    border-radius: 50%;
+}
+
+.bottom-welcom{
+    /* border: 2px solid yellow; */
+    max-width: 100vw;
+    height: 20vh;
+
+}
+
+.btn-primary{
+    background-color: var(--Rosa-fuerte);
+    color: var(--Blanco);
+    font-family: "Share_Tech";
+    font-size: 25px;
+    border-radius: 20px;
+    min-height: 10vh;
+    max-width: 10vw;
+    border: 2px dashed white;  
+}
+
+.star-xo{
+    text-decoration: none;
+    color: var(--Blanco);
+}
+
+@media screen and (max-width: 768px){
+
+    .creator-img {
+        justify-content: center !important; 
+        align-items: center !important;
+        text-align: center; /* Ayuda con elementos inline */
+        width: 100%; /* Asegura que ocupe todo el ancho para poder centrar */
+    }
+
+    /* Asegurar que la imagen misma no tenga márgenes que la empujen */
+    .img-creator {/*aqui se quita la jerarquia de boostrap*/
+        margin: 0 auto;
+    }
+    
+    .letters-welcomen {
+        font-size: 1.5rem; /* Mejor usar rem que px para accesibilidad */
+        /* border: 2px solid red; */
+    }
+
+    .btn-primary{
+        font-size: 1.2rem;
+        min-height: 8vh;
+        max-width: 25vw;
+    }
+
+}

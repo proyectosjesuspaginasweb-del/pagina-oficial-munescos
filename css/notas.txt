@@ -1,0 +1,437 @@
+/* sm ≥576 */
+@media (min-width: 374px) and (max-width: 425px){
+   .container-fluid{
+      /* border: yellow 2px solid; */
+      margin-bottom: 25%;
+   }
+
+   /*Responsive de inicio*/
+
+   .welcomen{
+      justify-content: center;
+      min-width: 100vw;
+   }
+
+   .welcomeContainer{
+      font-size: 20px;
+   }
+
+   .buttomEnter > a.enterButton{
+      font-size: 22px;
+   }
+
+   .imglogo{
+      justify-content: center;
+   }
+
+   /*Responsive de menu*/
+
+   .OptionandLogoMenu{
+      /* border: turquoise 1px solid; */
+      grid-template-columns: 55vw 44vw;
+   }
+
+   .OptionMenu{
+      grid-template-rows: 40vh;
+      grid-template-columns: 44vw;
+   }
+
+   .ImgLogoXo > img{
+      width: 77%;
+      left: 0;
+      top: 0;
+   }
+
+   .navoption{
+      display: none;
+   }
+
+   .iconhamburger{
+      position: fixed;
+      left: 80%;
+      top: 5%;
+      display: inline;
+      /* border: springgreen 1px solid; */
+      max-width: 17vw;
+      height: 9vh;
+      z-index: 999;
+   }
+
+   .navpeelable{
+      display: inline;
+      width: 14vw;
+      height: 8vh;
+      border-radius: 1em;
+   }
+
+   .container-switch{
+      /* border: palevioletred 1px solid; */
+      height: 40vh;
+      max-width: 0vw;
+   }
+
+   .switch{
+      max-width: 0;
+      height: 5vh;
+      right: 0;
+      top: 0;
+      position: relative;
+   }
+
+   .slider{
+      height: 4.6vh;
+   }
+
+   .scroll-action-nav{
+      position: fixed;
+      min-width: 100vw;
+      height: 19vh;
+      background-color: white;
+      animation: activemenu 2s ease;
+      display: grid;
+      grid-template-columns: 27% 52%;
+      grid-template-rows: 98%;
+      z-index: 999;
+   }
+
+   @keyframes activemenu {
+      from{
+         transform: translateY(-100px);
+      }to{
+         transform: translateY(0);
+         transition: 2s all ease;
+      }
+   }
+
+   .scroll-action-nav .OptionMenu{
+      display: inline-block;
+      border: 1px red solid;
+   }
+
+   .scroll-action-nav .navoption{
+      display: inline;
+      width: 50vw;
+      height: 17vh;
+      /* border: yellow 1px solid; */
+      justify-content: center;
+      align-content: center;
+      top: 0;
+   }
+
+   .scroll-action-nav .navoption > li{
+      height: 3.1vh;
+      top: -7px;
+   }
+
+   .scroll-action-nav .navoption > li > a{
+      font-size: 10px;
+   }
+
+   .scroll-action-nav .container-switch{
+      height: 19vh;
+      min-width: 35vw;
+      /* border: pink 1px solid; */
+   }
+
+   .scroll-action-nav .switch{
+      top: 0;
+      right: 40px;
+      min-width: 62%;
+      height: 5vh;
+   }
+
+   .scroll-action-nav .slider{
+      position: relative;
+      min-width: 62px;
+      height: 5.1vh;
+      border: 1px solid #6d6969;
+   }
+
+   .scroll-action-nav .iconhamburger{
+      position: absolute;
+      top: 27%;
+      left: 80%;
+   }
+
+   /*responsive Who*/
+
+   #WhoMyXo > .container-fluid{
+      /* border: springgreen 1px solid; */
+      height: 220vh;
+   }
+
+   .ContainerWhoXo{
+      /* border: yellow 1px solid; */
+      min-height: 270vh;
+      background-size: 100% 100%;
+   }
+
+   .ContainerTextAndTittleWhoXo{
+      /* border: tomato 1px solid; */
+      display: flex;
+      flex-direction: column;
+      min-height: 180vh;
+      justify-items: center;
+   }
+
+   .TittleWhoXo > h3{
+      position: relative;
+      min-width: 78vw;
+      top: 0;
+      right: 104%;
+      font-size: 30px;
+      height: 40vh;
+   }
+
+   .TextWhoXo > p{
+      position: relative;
+      min-width: 78vw;
+      top: 0;
+      right: 104%;
+      font-size: 15px;
+      height: 40vh;
+   }
+
+   .ImgWhoXo{
+      /* border: blue solid 1px; */
+      min-width: 100vw;
+      top: 0;
+      right: 0%;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .ImgWhoXo > img{
+      width: 54vw;
+      height: 28vh;
+   }
+
+   .ImgWhoXo > img:nth-child(1){
+      top: 0;
+      left: 25%;
+   }
+
+   .ImgWhoXo > img:nth-child(2){
+      top: 41%;
+      left: 26px;
+   }
+
+   .ImgWhoXo > img:nth-child(3){
+      top: 42%;
+      left: 40%;
+   }
+
+   /*responsive Aim*/
+
+   #AimXO > .container-fluid{
+      /* border: springgreen 1px solid; */
+      height: 210vh;
+   }
+
+   .ContainerTittleandTextAimXo{
+      /* border: yellow 1px solid; */
+      height: 210vh;
+   }
+
+   .TittleAimXo > h3{
+      font-size: 25px;
+      width: 73vw;
+   }
+
+   .ContainerTextAimXo{
+      flex-direction: column;
+      height: 145vh;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .ImgAimXo > img{
+      top: 8%;
+      left: 41%;
+   }
+
+   .TextAim{
+      min-height: 48vh;
+      width: 80vw;
+      /* border: red 1px solid; */
+      left: 4px;
+   }
+
+   .TextAim > p{
+      font-size: 13px;
+   }
+
+   /*Responsive Size*/
+
+   .ContainerTittleandSizesXo{
+      flex-direction: column;
+   }
+
+   .ContainerSizesXo{
+      min-height: 53vh;
+   }
+
+   .TittleSizeXo{
+      /* border: yellowgreen 1px solid; */
+      top: 6%;
+      width: 85%;
+   }
+
+   .TittleSizeXo > h3{
+      font-size: 30px;
+   }
+
+   .cards > li > h3{
+      position: relative;
+      top: 9px;
+      font-size: 20px;
+   }
+
+   .cards li{
+      top: 24%;
+      width: 100%;
+      height: 59vh;
+   }
+
+   /*Responsive Catalogo*/
+
+   #CatalogXo > .container-fluid:nth-child(1){
+      height: 590vh;
+      /* border: blue solid 1px; */
+   }
+   
+   .CatalogoXocontainer{
+      height: 590vh;
+   }
+
+   .TittleCatalogo > h3{
+      width: 76vw;
+      font-size: 30px;
+      top: 22px;
+   }
+
+   .TextCatalogo > p{
+      font-size: 15px;
+   }
+
+   .ImgContainerCatXo{
+      bottom: 30px;
+      grid-template-columns: 73%;
+      grid-auto-rows: 10%;
+      /* border: seashell 1px solid; */
+      height: 650vh;
+   }
+
+   .buttomMore{
+      bottom: 28px;
+   }
+
+   /*responsive process*/
+
+   .ContainerTittleandTextProcess{
+      /* border: seagreen 1px solid; */
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .TittleProcess{
+      width: 72%;
+      left: -10px;
+   }
+
+   .TittleProcess > h3{
+      font-size: 30px;
+   }
+
+   .textprocess{
+      font-size: 12px;
+      width: 85%!important;
+   }
+
+   .FlechaProgress{
+      display: none;
+   }
+
+   /*responsive contact*/
+
+   #ContactXo > .container-fluid:nth-child(1){
+      /* border: yellow 1px solid; */
+      height: 220vh;
+   }
+
+   .ContainerContactXo{
+      grid-template-columns: 100% !important;
+      grid-template-rows: 54% 42%;
+      grid-auto-flow: column;
+   }
+
+   .IconsXo{
+      grid-template-columns: 30% 30%;
+      grid-template-rows: 50% 50%;
+      gap: 27px;
+   }
+
+   .IconsRed{
+      /* border: skyblue 1px solid; */
+      width: 100%;
+      height: 24vh;
+   }
+
+
+   .IconsRed > a > img{
+      /* border: 1px solid orange; */
+      position: absolute;
+      top: 41px;
+      left: 18px;
+      height: 16vh;
+   }
+
+   .dateperson{
+      font-size: 10px;
+      grid-template-columns: 48% 48%;
+      grid-auto-rows: 50%;
+   }
+
+   .FormXosizeandcomentarie > h3{
+      font-size: 20px;
+   }
+
+   .sizeform{
+      font-size: 14px;
+   }
+
+   /*Responsive footer*/
+
+   .FooterXo{
+      /* border: olivedrab 1px solid; */
+      min-height: 56vh;
+   }
+
+   .backgroundfooter{
+      background-size: 76%;
+   }
+
+   .footerdate{
+      min-width: 100%;
+   }
+
+   .FooterXo{
+      /* border: tomato 1px solid; */
+      min-height: 23vh;
+   }
+
+   .footerdate{
+      font-size: 13px;
+   }
+
+   .NameXo{
+      gap: 10px
+   }
+
+   textarea{
+      position: relative;
+      top: 16px;
+      width: 83%;
+   }
+}
