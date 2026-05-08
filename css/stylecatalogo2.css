@@ -95,7 +95,7 @@ body{
 footer > .container-fluid{
     max-height: 100vh !important;
     /* border: blue 1px solid; */
-    margin-top: 100px!important;
+    margin-top: 70px!important;
     background: url(../assent/img/Imagen_fondos/Fondo-footer.svg) no-repeat bottom;
 }
 
@@ -114,6 +114,80 @@ footer > .container-fluid{
     min-height: 8vh;
 }
 
+/*NAV ACTIVATION*/
+
+.is-scrolled{
+    position:fixed;
+    background-color: white;
+    max-height: 12vh;
+    min-width: 100%;
+    margin: 0;
+    top: 0;
+    animation: navaction 2s forwards;
+    z-index: 999;
+    /* border: springgreen 1px solid; */
+    overflow: hidden!important;
+}
+
+@keyframes navaction{
+    from{
+        transform: translateY(-100%);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+.is-scrolled .primary-img-xo{
+    /* border: red 1px solid; */
+    max-width: 12%;
+    min-height: 11vh;
+}
+
+.is-scrolled .img-log-xo{
+    max-width: 47%;
+    max-height: 14vh;
+}
+
+.is-scrolled .primary-nav{
+    gap: 0!important;
+    /* border: #88ce02 1px solid; */
+    min-width: 75%;
+    max-height: 11vh;
+    overflow: hidden;
+}
+
+.is-scrolled .mode-black{
+    /* border: blueviolet 1px solid; */
+    max-width: 94%;
+}
+
+.is-scrolled .form-check{
+    /* border: yellow 1px solid; */
+    align-content: center;
+    min-width: 13%;
+}
+
+.is-scrolled .nav-optiones-xo{
+    gap: 0!important;
+    max-width: 100%;
+    /* border: 1px solid red; */
+    justify-content: center !important;
+}
+
+.is-scrolled .nav-optiones-xo > li{
+    /* border: indigo 1px solid; */
+    justify-content: center;
+    max-width: 14%;
+    font-size: 10px;
+}
+
+.is-scrolled-who{
+    position: absolute;
+    /* border: red 1px solid; */
+    min-height: 120vh;
+}
+
 /*CONTENEDOR NAV WHO*/
 
 .primary-nav-who{/*contenedor principal*/
@@ -122,12 +196,13 @@ footer > .container-fluid{
     max-width: 100vw;
     background: url(../assent/img/Fondos_Pagina_Munecos/FondoWho3.jpg) no-repeat center;
     background-size: cover;
+    overflow: hidden;
 }
 
 .img-log-xo{
     /* border: solid 1px blue; */
     max-width: 200px;
-    max-height: 200px;  
+    max-height: 200px;
 }
 
 .form-check{
@@ -149,7 +224,7 @@ footer > .container-fluid{
     text-decoration: none;
     color: var(--Rosa-fuerte);
     font-family: Lobster;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .icon-hamburger-nav{
@@ -209,8 +284,11 @@ footer > .container-fluid{
 
 .img-who-xo{
     position: static;
-    border-radius: 50%;
     flex-wrap: wrap;
+    max-width: 100%;
+    width: 400px;
+    min-height: 45vh;
+    /* border: #88ce02 1px solid; */
 }
 
 /*CONTENEDOR AIM*/
@@ -266,7 +344,7 @@ footer > .container-fluid{
     border-radius: 30px 13px;
     /*efecto vidrio templado*/
     padding: 0;
-    margin: 0;   
+    margin: 0;
     min-height: 80%;
     max-width: 100%;
     filter: drop-shadow(0 2px 10px rgb(206, 199, 206)); /* Sombra ligera */
@@ -341,7 +419,6 @@ footer > .container-fluid{
     box-shadow: 0 4px 22px rgba(80, 3, 76, 0.37); /* Sombra ligera */
     border-radius: 30px 13px;
     /*efecto vidrio templado*/
-    margin-left: 95px;
     filter: drop-shadow(0 2px 10px rgb(206, 199, 206)); /* Sombra ligera */
 }
 
@@ -444,7 +521,7 @@ a:hover{
     background: url(../assent/img/Imagen_fondos/Iconos-herramienta-fondo.png) no-repeat top 10px left / 30rem,
     url(../assent/img/Imagen_fondos/Iconos-herramienta2-fondo.png) no-repeat right center / 20rem,
     url(../assent/img/Imagen_fondos/Iconos-herramienta3-fondo.png) no-repeat left bottom / 30rem;
-    justify-content: center; 
+    justify-content: center;
     gap: 45px;
 }
 
@@ -454,7 +531,7 @@ a:hover{
     url(../assent/img/Imagen_fondos/estrella-estambre.png) no-repeat center bottom;
     max-width: 100%;
     min-height: 170vh;
-    border: yellowgreen 1px solid;
+    /* border: yellowgreen 1px solid; */
 }
 
 .tittle-catalogo-xo{
@@ -532,27 +609,30 @@ a:hover{
     left: 0;
 }
 
-.ImgCatXo > a{/*el la imagen del cuadrado*/
-    position: relative;
-    /* border: #ff0080 solid 2px; */
-    z-index: 4;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: transform 1s ease, opacity 1s ease, top 1s ease;
-    justify-content: center;
-    align-content: center;
-
-    &:hover{
-        opacity: 0.8;
-        transform: translateY(0);
-    }
+.container-cuadro-xo{/*el la imagen del cuadrado*/
+    /* border: blue solid 2px; */
+    z-index: 99;
+    max-height: 50vh;
+    overflow: hidden;
 }
 
-.ImgCatXo > a > img{
-    position: relative;
-    width: 20%;
-    height: auto;
-    z-index: 4;
+.img-cuadrado {
+    max-height: 14vh !important;
+    opacity: 1;
+    /* border: #ff0080 1px solid; */
+}
+
+.container-cuadro-xo > a{
+    /* border: olivedrab 1px solid; */
+    transform: translateY(100px) !important;
+    transition: all 1s ease;
+    opacity: 0;
+    min-height: 100vh;
+}
+
+.container-cuadro-xo > a:hover{
+    transform: translateY(0) !important;
+    opacity: 1;
 }
 
 .ModalDialog{
@@ -607,58 +687,34 @@ html:has(.ModalDialog:target) {/*hace que solo afecte el modalDialog para que al
     /*efecto vidrio templado*/
 }
 
-.btn-cerrar > img{
-    position: relative;
-    width: 100%;
-    left: 23.5em;
-    bottom: 5em;
-    height: 10vh;
-    font-size: 40px;
-    text-decoration: none;
-    z-index: 999;
+.container-x-xo{
+    border: turquoise 1px solid;
+    min-height: 80vh;
 }
 
-.FlechaDerecha, .FlechaIzquierda {
-    flex-shrink: 0; /* Evita que la flecha se aplaste */
-    width: 80px;    /* Tamaño fijo para las flechas */
-    cursor: pointer;
-    z-index: 10;
+.btn-cerrar{
+    border: #88ce02 1px solid;
+    min-height: 15vh;
 }
 
-.FlechaDerecha{
-    position: absolute;
-    /* border: #6d015f 2px solid; */
-    width: 14%;
-    height: 30vh;
-    top: 13em;
-    right: 8em;
+.btn-cerrar > img {
+    max-width: 50%;
 }
 
-.FlechaDerecha > img{
-    position: absolute;
-    width: 100%;
-    height: 20vh;
-    right: 0.1em;
-    top: 1.5em;
+.container-row-xo{
+    border: #88ce02 1px solid;
+    min-height: 100vh;
+    gap: 550px;
 }
 
-.FlechaIzquierda{
-    position: absolute;
-    /* border: #6d015f 2px solid; */
-    width: 14%;
-    height: 30vh;
-    top: 13em;
-    left: 8em;
-    z-index: 4;
-    transform: rotate(180deg);
+.arrow-xo{
+    border: teal 1px solid;
+    min-height: 20vh;
 }
 
-.FlechaIzquierda > img{
-    position: absolute;
-    width: 100%;
-    height: 20vh;
-    right: 0em;
-    top: 1.5em;
+.arrow-xo > img{
+    max-width: 100%;
+    max-height: 50vh;
 }
 
 .buttomMore{
@@ -687,6 +743,12 @@ html:has(.ModalDialog:target) {/*hace que solo afecte el modalDialog para que al
     text-decoration: none;
     font-size: 20px;
     font-family: Lobster;
+}
+
+.buttom-more-xo{
+    border: #88ce02 1px solid;
+    max-width: 100%;
+    min-height: 20vh;
 }
 
 /*PROCESS XO*/
@@ -920,24 +982,33 @@ footer{
 /*MEDIAS RESPONSIVE*/
 
 @media screen and (max-width: 768px) {
+
     .container-fluid{
-    height: 100vh;
-    border: blueviolet 1px solid;
+    border: red 1px solid;
     margin-bottom: 100px;
+    overflow: hidden;
+    }
+
+    .container-fluid:nth-child(1){
+    min-height: 234vh;
+    border: blue 1px solid;
+    overflow: hidden;
     }
 
     .container-fluid:nth-child(2){
-        max-height: 250vh;
-        border: yellow 1px solid;
-        margin-top: 380px !important;
-        justify-content: center;
-        align-content: center;
-        display: flex;
+    min-height: 234vh;
+    border: rgb(11, 233, 185) 1px solid;
+    overflow: hidden;
     }
 
     /*CONTENEDOR DE NAV Y WHO*/
 
     /*NAV PRIMARY*/
+
+    .primary-nav-who{
+        border: salmon 1px solid;
+        min-height: 243vh;
+    }
 
     .nav-optiones-xo{
         display: none!important;
@@ -945,37 +1016,40 @@ footer{
 
     /*WHO*/
 
-    .primary-nav-who{
-        border: violet 1px solid;
-        height: 220vh;
-    } 
-
     .primary-who-xo{
-        height: 100vh;
-    }
-
-    .primary-img-who-xo{
-        min-height: 50vh;
-        margin: 0;
-    }
-
-    .title-primary-who-xo{
-        font-size: 30px;
-    }
-
-    .text-primary-who-xo{
-        font-size: 20px;
+        border: teal 1px solid;
+        min-height: 175vh;
     }
 
     /*AIM*/
 
+    .primary-aim{
+        border: royalblue 1px solid;
+        min-height: 225vh;
+    }
+
+    .text-aim-primary{
+        border: olivedrab 1px solid;
+        min-height: 152vh;
+    }
+
+    .tittle-aim-primary{
+        border: teal 1px solid;
+        margin: auto;
+    }
+
+    .text-aim{
+        border: rgba(245, 3, 213, 0.418) 1px solid;
+        min-height: 40vh;
+    }
+
     .text-aim > h3{
-    font-size: 40px;
+    font-size: 25px;
     font-family: Lobster;
     }
 
     .text-aim > p{
-    font-size: 20px;
+    font-size: 15px;
     font-family: Playfair_Display;
     margin: 0!important;
     }
@@ -983,5 +1057,16 @@ footer{
     .back-aim-primary{
         min-width: 90%;
         min-height: 203vh;
+        overflow: hidden;
     }
+
+    /*size*/
+    .primary-size-xo{
+        overflow: hidden;
+    }
+
+    .gallery{
+        overflow: hidden;
+    }
+
 }
