@@ -12,7 +12,7 @@ const elementosDOM = navAction.map(item => ({
 
 window.addEventListener("scroll", () =>{
 	const scrollNav = window.scrollY;
-	const isMobile = window.innerWidth <= 575;
+	const isMobile = window.innerWidth <= 768;
 	
 	elementosDOM.forEach(({el, className}) =>{
 		if (!isMobile && scrollNav > 100) {
@@ -23,7 +23,21 @@ window.addEventListener("scroll", () =>{
 	});
 });
 
+/*active para menu despegable*/
 
+/*active para menu despegable*/
+
+// Seleccionamos el botón específico, no todo el contenedor
+const btnAbrir = document.getElementById("activebtnav");
+// Seleccionamos lo que queremos mostrar/ocultar
+const menuOpciones = document.getElementById("navpeelable");
+const containerimgnav = document.getElementById("containerimgnav");
+
+btnAbrir.addEventListener("click", (event) => {
+
+    menuOpciones.classList.toggle("scroll-action-nav");
+    menuOpciones.classList.toggle("menu-open");
+});
 
 /*Efecto de size de xo*/
 
