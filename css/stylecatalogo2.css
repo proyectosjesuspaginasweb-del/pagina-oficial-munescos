@@ -200,6 +200,12 @@ footer > .container-fluid{
     overflow: hidden;
 }
 
+.primary-nav{
+    /* border: steelblue 1px solid; */
+    justify-content: end;
+    
+}
+
 .img-log-xo{
     /* border: solid 1px blue; */
     max-width: 200px;
@@ -1011,8 +1017,15 @@ footer{
 
 /*MEDIAS RESPONSIVE*/
 
+@media screen and (max-width: 320px) {
+    
+    /**ICONO HAMBUERGER***/
+    .icon-hamburger-nav{
+        padding-right: 15px;
+    }
+}
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
 
     .container-fluid{
     /* border: red 1px solid; */
@@ -1052,6 +1065,9 @@ footer{
     .icon-hamburger-nav{
         min-height: auto;
         /* border: steelblue 1px solid; */
+        position:fixed;
+        z-index: 999;
+        min-width: 91vw;
     }
 
     .navpeelable{
@@ -1091,8 +1107,62 @@ footer{
         display:inline-block;
         background: var(--Blanco);
         min-width: 100%;
-        min-height: 10vh;
+        min-height: 42vh;
         animation: iconactivehamburguer 2s all ease-in-out;
+        z-index: 999;
+    }
+
+    .menu-open .primary-nav{
+        display: flex!important;
+        flex-direction: row!important;
+        /* border: tomato 1px solid; */
+    }
+
+    .menu-open .icon-hamburger-nav{
+        /* border: yellow 1px solid; */
+        margin-left: 20px;
+        padding: 0;
+        position: absolute;
+        top: 35px;
+        justify-content: end !important;
+        margin: 0;
+        right: 0;
+        overflow: 1;
+    }
+
+    .menu-open .navpeelable{
+        justify-content: end;
+    }
+
+    .menu-open .nav-optiones-xo{
+        display: flex !important;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0px!important;
+        width: 100%;
+        border: none;
+        justify-self: start;
+        padding: 0;
+        /* border: #88ce02 1px solid; */
+        overflow: 2;
+    }
+
+    .menu-open .nav-optiones-xo > li{
+        width: 100%;
+        justify-content: start !important;
+        padding-left: 26px;
+    }
+
+    .menu-open .nav-optiones-xo > li > a{
+        display: block;
+        width: auto;
+        padding: 0.5rem 0;
+        font-size: 10px;
+    }
+
+    .mode-black{
+        /* border: turquoise 1px solid; */
+        padding-right: 5px;
     }
 
     /**WHO**/
@@ -1109,14 +1179,23 @@ footer{
         /* border: teal 1px solid; */
         min-height: 10vh;
         gap: 50px;
+        margin-top: 46px !important;
     }
 
     .title-primary-who-xo{
         min-height: 50vh;
     }
 
+    .tittle-who-xo{
+        font-size: 25px;
+    }
+
     .text-primary-who-xo{
         min-height: 50vh;
+    }
+
+    .text-who-xo{
+        font-size: 15px;
     }
 
     .primary-img-who-xo{
