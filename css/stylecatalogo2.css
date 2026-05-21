@@ -117,8 +117,6 @@ body{
 
 .is-scrolled-who{
     position: absolute;
-    top: 0;
-    left: 0;
     /* border: red 1px solid; */
     min-height: 120vh;
     display: grid;
@@ -200,7 +198,6 @@ footer > .container-fluid{
 /*CONTENEDOR NAV WHO*/
 
 .primary-nav-who{/*contenedor principal*/
-    position: relative;
     /* border: 1px solid violet; */
     height: 141vh;
     max-width: 100vw;
@@ -516,21 +513,29 @@ a:hover{
 
 /*CATALOGO*/
 
-.container-catalogo-xo{
-    /* border: orangered 1px solid; */
-    max-width: 100%;
-    height: 200vh;
+.primary-imgcatalogo-xo{
+    width: 100%;
+    /* border: blue 2px solid; */
     overflow: hidden;
     background: url(../assent/img/Imagen_fondos/Iconos-herramienta-fondo.png) no-repeat top 10px left / 30rem,
     url(../assent/img/Imagen_fondos/Iconos-herramienta2-fondo.png) no-repeat right center / 20rem,
     url(../assent/img/Imagen_fondos/Iconos-herramienta3-fondo.png) no-repeat left bottom / 30rem;
-    justify-content: center;
+}
+
+.container-catalogo-xo{
+    /* border: orangered 2px solid; */
+    width: 100%;
+    max-width: 850px;
+    height: 200vh;
     gap: 45px;
+    justify-content: center;
 }
 
 .catalogo-primary-xo{
     /* border: teal 1px solid; */
-    max-height: 265vh;
+    max-height: 283vh;
+    gap: 30px;
+    height: 301vh;
 }
 
 .back-size{
@@ -1028,7 +1033,7 @@ footer{
     }
 
     .container-fluid:nth-child(4){
-    min-height: 593vh;
+    min-height: 365vh;
     /* border: blue 1px solid; */
     margin-top: 100px!important;
     }
@@ -1275,13 +1280,22 @@ footer{
     /****CATALOGO****/
 
     .catalogo-primary-xo{
-        min-height: 600vh;
+        min-height: 374vh;
+        gap: 30px;
         /* border: #88ce02 2px solid; */
     }
 
+    .primary-imgcatalogo-xo{
+        width: 100;
+        display: grid;
+        gap: 0!important;
+        height: 316vh;
+        /* border: red 2px solid; */
+    }
+
     .container-catalogo-xo{
-        /* border: teal 2px solid; */
-        min-height: 550vh;
+        /* border: yellow 2px solid; */
+        min-height: 300vh;
     }
 
     /***WHY***/
