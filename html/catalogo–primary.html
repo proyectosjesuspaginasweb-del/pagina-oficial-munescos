@@ -11,57 +11,62 @@
 <body>
 
     <main>
-        <!--------------------NAV Y WHO------------------------->
-        <section class="container-fluid col-12 p-0 m-0" id="inicio">
-            
-            <div class="primary-nav-who row col-md-12 col-lg-12 d-flex justify-content-center align-items-center p-0 m-0">
+        <!--------------------CONTAINER HEADER FOR WHO------------------------->
+        <section class="container-fluid" id="inicio">
+        <!--------------------PRIMARY WHO AND VIDEO------------------------->
+            <div class="primary-video-who col-md-12">
+        <!--------------------VIDEO WHO------------------------->
+                <div class="bg-video-primary col-md-12">
+                    <video autoplay muted loop playsinline src="../assent/video/video-xo-1.mp4" class="bg-video" type="Fondo de video"></video>
+                </div>
+        <!--------------------HERO CONTENT NAV AND WHO------------------------>
+                <div class="hero-content-who col-md-12">
 
-                <div class="container-img-nav row col-md-12 col-lg-12 d-md-flex justify-content-center align-items-center p-0 m-0" id="nav-action">
+                    <div class="primary-img-nav col-md-12" id="nav-action">
 
-                    <div class="primary-img-xo col-md-4 p-0 m-0 d-flex justify-content-center align-items-center">
-                        <img src="../assent/img/Logos_muñecos/LogoXo.png" class="img-log-xo col" alt="">
-                    </div>
-                
-                    <nav class="primary-nav col-md-8 justify-content-center align-items-center p-0 m-0 d-md-flex flex-column gap-4" id="navpeelable">
-
-                        <div class="mode-black col-md-12 d-flex justify-content-end align-items-end">
-
-                            <div class="form-check form-switch d-flex col-md-1 col-lg-1 justify-content-center align-items-center">
-                                <input class="form-check-input" type="checkbox" role="switch" id="switchCheckChecked" checked>
-                            </div>
-
+                        <div class="primary-img-xo col-md-5">
+                            <img src="../assent/img/Logos_muñecos/LogoXo.png" alt="Imagen de Logo XO">
                         </div>
-                    
-                        <ul class="nav-optiones-xo row col-md-12 justify-content-end align-items-end gap-1">
-                            <li class="col"><a href="#inicio">Inicio</a></li>
-                            <li class="col"><a href="#objetivos">Objetivos</a></li>
-                            <li class="col"><a href="#tamaños">Tamaños</a></li>
-                            <li class="col"><a href="#catalogo">Catálogo</a></li>
-                            <li class="col"><a href="#como-pedir">¿Cómo pedir?</a></li>
-                            <li class="col"><a href="#contactos">Contactos</a></li>
+                
+                        <nav class="primary-nav col-md-7" id="navpeelable">
+
+                        <div class="container-switch col-md-11">
+                            <label id="switch" class="switch">
+                                <input type="checkbox" id="theme-checkbox">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+
+                        <ul class="nav-optiones-xo col-md-11">
+                            <li><a href="#inicio">Inicio</a></li>
+                            <li><a href="#objetivos">Objetivos</a></li>
+                            <li><a href="#tamaños">Tamaños</a></li>
+                            <li><a href="#catalogo">Catálogo</a></li>
+                            <li><a href="#como-pedir">¿Cómo pedir?</a></li>
+                            <li><a href="#contactos">Contactos</a></li>
                         </ul>
 
-                        <div class="icon-hamburger-nav d-flex d-md-none col-lg-11 d-flex justify-content-end align-items-end">
+                        <div class="icon-hamburger-nav col-md-11">
                             <button class="navpeelable p-1 m-2" id="activebtnav"><img src="../assent/img/Iconos_Xo/icon-icons.svg" class="img-hamburger-xo m-0 p-0" alt="iconhamburger"></button>
                         </div>
 
-                    </nav>
+                        </nav>
                 
-                </div>
-
-                <div class="primary-who-xo col-lg-12 p-0 m-0 d-flex" id="nav-who-action">
-
-                    <div class="titleandtext-primary-who-xo col-12 col-md-6 text-center d-flex justify-content-center align-items-center">
-                        <div class="container-titleandtext col-10 col-md-10 text-center align-content-center flex-column">
-                            <span>¿Quiénes somos?</span>
-                            <p>Persona dedicada a la creación de experiencias y recuerdos realizada con la mas alta calidad de estambre, Donde nos comprometemos a dar una calidd unica en nuestros trabajos.</p>
-                        </div>    
                     </div>
-                    
-                    <div class="primary-img-who-xo col-12 col-md-6 text-center d-flex align-items-center justify-content-center">
 
-                        <div class="container-imgwho-xo justify-items-center align-content-center">
-                            <img src="../assent/img/TrabajosXo/who-oficial.png" class="img-fluid" alt="Imagen de quiénes somos">
+                    <div class="primary-who-xo col-md-12" id="nav-who-action">
+        
+                        <div class="titleandtext-primary-who-xo col">
+        
+                            <div class="container-titleandtext col-md-8">
+                                <span>¿Quiénes somos?</span>
+                                <p>Persona dedicada a la creación de experiencias y recuerdos realizada con la mas alta calidad de estambre, Donde nos comprometemos a dar una calidd unica en nuestros trabajos.</p>
+                            </div>
+
+                        </div>
+        
+                        <div class="primary-img-who-xo col">
+                                <img src="../assent/img/TrabajosXo/who-oficial.png" class="img-fluid" alt="Imagen de quiénes somos">
                         </div>
 
                     </div>
@@ -72,34 +77,34 @@
 
         </section>
         <!--------------------AIM------------------------->
-        <section class="container-fluid col-12 p-0 m-0" id="objetivos">
+        <section class="container-fluid" id="objetivos">
             
-            <div class="primary-aim col-12 col-md-12 d-flex justify-items-center align-items-center p-4 m-0 flex-column">
+            <div class="primary-aim col-md-12">
 
-                <div class="back-aim-primary2 z-n1 col-12 col-lg-12 position-absolute p-0 m-0 justify-content-center align-items-center d-flex"></div>
+                <div class="back-aim-primary2 z-n1 col-md-12 position-absolute p-0 m-0"></div>
 
-                <div class="tittle-aim-primary col-12 col-md-12 justify-content-center align-items-center d-flex">
-                    <h3 class="tittle-aim-xo col-12 col-md-10 d-flex justify-content-center align-items-center">Objetivos, Mision y Proposito</h3>
+                <div class="tittle-aim-primary col-md-12">
+                    <h3>Objetivos, Mision y Proposito</h3>
                 </div>
 
-                <div class="text-aim-primary col-md-12 col-lg-12 justify-content-center align-content-center d-flex row">
+                <div class="text-aim-primary col-md-12">
 
-                    <article class="text-aim col-11 col-md-4 justify-content-center align-content-center d-grip column text-center">
+                    <article class="text-aim">
                         <h3>Objetivos</h3>
                         <p >Creacion de un recuerdo echos con estambre de la mas alta calidad para eventos especiales, diseños personalizados y/o retrata a tu persona especial para tener un recuerdo de el o de ella.</p>
-                        <img src="../assent/img/Iconos_Xo/ObjetivoXo.png" class="icon-objetivo-xo" alt="iconobjetivoxo">
+                        <img src="../assent/img/Iconos_Xo/ObjetivoXo.png" alt="iconobjetivoxo">
                     </article>
                 
-                    <article class="text-aim col-11 col-md-4 justify-content-center align-content-center d-grip column text-center">
+                    <article class="text-aim">
                         <h3>Mision</h3>
                         <p>Poder compartir un trabajo artesanal, para un bonito recuerdo unico y especial para llegar a los corazones de tus seres queridos</p>
-                        <img src="../assent/img/Iconos_Xo/MisionXo.png" class="icon-objetivo-xo" alt="iconobjetivoxo">
+                        <img src="../assent/img/Iconos_Xo/MisionXo.png" alt="iconobjetivoxo">
                     </article>
 
-                    <article class="text-aim col-11 col-md-4 justify-content-center align-content-center d-grip column text-center">
+                    <article class="text-aim">
                         <h3>Proposito</h3>
                         <p>Un gesto bonito, que se puede dar en los eventos o fechas especiales, !realiza tus pedidos no dejes pasar este bonito y gran recuerdo¡</p>
-                        <img src="../assent/img/Iconos_Xo/PropositoXo.png" class="icon-objetivo-xo" alt="iconobjetivoxo">
+                        <img src="../assent/img/Iconos_Xo/PropositoXo.png" alt="iconobjetivoxo">
                     </article>
 
                 </div>
@@ -108,21 +113,21 @@
 
         </section>
         <!--------------------TAMAÑOS------------------------->
-        <section class="container-fluid col-12 p-0 m-0" id="tamaños">
+        <section class="container-fluid" id="tamaños">
 
             <div class="back-size col-md-12 z-n1 position-absolute"></div>
             
-            <div class="primary-size-xo col-md-12 d-flex justify-content-center align-content-center m-0 flex-column">
+            <div class="primary-size-xo">
                 
-                <div class="TittleSizeXo col-12 text-center d-flex align-items-center justify-content-center">
-                    <h3 class="col-9 col-md-5 text-center d-flex align-items-center justify-content-center">Tipos de Tamaño</h3>
+                <div class="TittleSizeXo col-md-12">
+                    <h3>Tipos de Tamaño</h3>
                 </div>
 
-                <div class="ContainerImgSizeXo col-12 d-flex align-items-center justify-content-center p-0 m-0">
+                <div class="ContainerImgSizeXo col-md-12">
 
-                    <div class="gallery col-12 d-flex align-items-center justify-items-center p-0 m-0 flex-column">
+                    <div class="gallery col-md-12">
 
-                        <ul class="cards col-12 col-lg-12 d-flex justify-content-center p-0 m-0">
+                        <ul class="cards">
                             <li style="background-image: url(../assent/img/Muñecos_tamaño/Muñeco-8cm.png);"><h3>tamaño 8cm</h3></li>
                             <li style="background-image: url(../assent/img/Muñecos_tamaño/Muñeco-10cm.png);"><h3>tamaño 10cm</h3></li>
                             <li style="background-image: url(../assent/img/Muñecos_tamaño/Muñeco-15cm.png);"><h3>tamaño 15cm</h3></li>
@@ -139,259 +144,260 @@
                             <li style="background-image: url(../assent/img/Muñecos_tamaño/Muñeco-80cm-removebg-preview.png);"><h3>tamaño 80cm</h3></li>
                         </ul>
 
-                        <div class="actions col-12 col-lg-12 d-flex align-content-center justify-content-center p-0 m-0">
+                        <div class="actions">
                             <button class="prev">Anterio</button>
                             <button class="next">Siguiente</button>
                         </div>
 
                     </div>
 
-                    <div class="drag-proxy"></div>
-                                
+                    <div class="drag-proxy col-md-12"></div>
+
                 </div>
 
             </div>
 
         </section>
         <!--------------------CATALOGO------------------------->
-        <section class="container-fluid col-12 p-0 m-0" id="catalogo">
+        <section class="container-fluid" id="catalogo">
 
-            <div class="catalogo-primary-xo col-md-12 d-flex justify-content-center align-content-center flex-column">
+            <div class="catalogo-primary-xo col-md-12">
 
-                <div class="tittle-catalogo-xo col-12 col-md-12 d-flex justify-content-center align-content-center">
-                    <h3 class="col-10 col-md-7 d-flex justify-content-center align-items-center">Catalgo de Muñecos</h3>
+                <div class="tittle-catalogo-xo col-md-12">
+                    <h3>Catalgo de Muñecos</h3>
                 </div>
 
-                <div class="text-catalogo-xo activecatalogo col-12 col-md-12 d-flex justify-content-center align-items-center text-center">
-                    <p class="col-10 col-md-7 d-flex justify-content-center align-items-center text-center">Ven aprecia y escoje el modelo que mas te guste, ¡Una bonito recuerdo para guardar!</p>
+                <div class="text-catalogo-xo col-md-12">
+                    <p>Ven aprecia y escoje el modelo que mas te guste, ¡Una bonito recuerdo para guardar!</p>
                 </div>
 
-                <div class="primary-imgcatalogo-xo col-12 col-md-12 d-flex justify-content-center">
+                <div class="primary-imgcatalogo-xo col-md-12">
+                    <div class="container-catalogo-xo col-md-12">
 
-                    <div class="container-catalogo-xo col-12 col-md-12 row p-0 m-0">
+                            <div class="img-catalogo-xo">
 
-                            <div class="img-catalogo-xo col-10 col-sm-5 col-md-2 col-lg-1 activeimgcat1 d-flex justify-content-center align-items-center text-center">
-
-                                <div class="container-cuadro-xo col-md-12 d-flex justify-content-center align-items-center text-center">
-                                    <a href="#ImagenGrande1" class="col-md-12 d-flex justify-content-center align-items-center text-center"><img src="../assent/img/Iconos_Xo/cuadrado.png" alt="Cuadrado" class="img-cuadrado col-md-4"></a>
+                                <div class="container-cuadro-xo">
+                                    <a href="#ImagenGrande1"><img src="../assent/img/Iconos_Xo/cuadrado.png" alt="Cuadrado" class="img-cuadrado"></a>
                                 </div>
                                 <img src="../assent/img/TrabajosXo/trabajos muestra (1).jpeg" id="ImagenPequeña1" alt="Trabajo1" loading="lazy">
 
-                            </div> 
+                            </div>
 
-                            <div id="ImagenGrande1" class="ModalDialog col-lg-12">
-                                <div class="container-x-xo col-md 12 z-3 position-absolute d-flex justify-content-end align-items-start text-center">
-                                    <a href="#ImagenPequeña1" class="btn-cerrar col-md-2 d-flex justify-content-center align-items-center"><img src="../assent/img/Iconos_Xo/cancelar.png" alt="x-img-xo"></a>
+                            <div class="img-catalogo-xo">
+
+                                <div class="container-cuadro-xo">
+                                    <a href="#ImagenGrande2"><img src="../assent/img/Iconos_Xo/cuadrado.png" alt="Cuadrado" class="img-cuadrado"></a>
+                                </div>
+                                <img src="../assent/img/TrabajosXo/trabajos muestra (2).jpeg" id="ImagenPequeña2" alt="Trabajo1" loading="lazy">
+
+                            </div>
+
+                            <div class="img-catalogo-xo">
+
+                                <div class="container-cuadro-xo">
+                                    <a href="#ImagenGrande3"><img src="../assent/img/Iconos_Xo/cuadrado.png" alt="Cuadrado" class="img-cuadrado"></a>
+                                </div>
+                                <img src="../assent/img/TrabajosXo/trabajos muestra (3).jpeg" id="ImagenPequeña3" alt="Trabajo1" loading="lazy">
+
+                            </div>
+                        
+                            <div class="img-catalogo-xo">
+
+                                <div class="container-cuadro-xo">
+                                    <a href="#ImagenGrande4"><img src="../assent/img/Iconos_Xo/cuadrado.png" alt="Cuadrado" class="img-cuadrado"></a>
+                                </div>
+                                <img src="../assent/img/TrabajosXo/trabajos muestra (4).jpeg" id="ImagenPequeña4" alt="Trabajo1" loading="lazy">
+
+                            </div>
+
+                            <div class="img-catalogo-xo">
+
+                                <div class="container-cuadro-xo">
+                                    <a href="#ImagenGrande5"><img src="../assent/img/Iconos_Xo/cuadrado.png" alt="Cuadrado" class="img-cuadrado"></a>
+                                </div>
+                                <img src="../assent/img/TrabajosXo/trabajos muestra (5).jpeg" id="ImagenPequeña5" alt="Trabajo1" loading="lazy">
+
+                            </div>
+
+                            <div class="img-catalogo-xo activeimgcat2">
+
+                                <div class="container-cuadro-xo">
+                                    <a href="#ImagenGrande6"><img src="../assent/img/Iconos_Xo/cuadrado.png" alt="Cuadrado" class="img-cuadrado"></a>
+                                </div>
+                                <img src="../assent/img/TrabajosXo/trabajos muestra (6).jpeg" id="ImagenPequeña6" alt="Trabajo1" loading="lazy">
+
+                            </div>
+
+                            <div class="img-catalogo-xo activeimgcat3">
+
+                                <div class="container-cuadro-xo">
+                                    <a href="#ImagenGrande7"><img src="../assent/img/Iconos_Xo/cuadrado.png" alt="Cuadrado" class="img-cuadrado"></a>
+                                </div>
+                                <img src="../assent/img/TrabajosXo/trabajos muestra (7).jpeg" id="ImagenPequeña7" alt="Trabajo1" loading="lazy">
+
+                            </div>
+
+                            <div class="img-catalogo-xo activeimgcat3">
+
+                                <div class="container-cuadro-xo">
+                                    <a href="#ImagenGrande8"><img src="../assent/img/Iconos_Xo/cuadrado.png" alt="Cuadrado" class="img-cuadrado"></a>
+                                </div>
+                                <img src="../assent/img/TrabajosXo/trabajos muestra (8).jpeg" id="ImagenPequeña8" alt="Trabajo1" loading="lazy">
+
+                            </div>
+
+                            <div class="img-catalogo-xo activeimgcat3">
+
+                                <div class="container-cuadro-xo">
+                                    <a href="#ImagenGrande9"><img src="../assent/img/Iconos_Xo/cuadrado.png" alt="Cuadrado" class="img-cuadrado"></a>
+                                </div>
+                                <img src="../assent/img/TrabajosXo/trabajos muestra (9).jpeg" id="ImagenPequeña9" alt="Trabajo1" loading="lazy">
+
+                            </div>
+
+                    </div>
+                </div>
+
+                <div class="imag-big">
+                            <div id="ImagenGrande1" class="ModalDialog">
+                                <div class="container-x-xo">
+                                    <a href="#ImagenPequeña1" class="btn-cerrar"><img src="../assent/img/Iconos_Xo/cancelar.png" alt="x-img-xo"></a>
                                 </div>
                                     <div class="ModalContent">
 
-                                        <div class="container-row-xo col-md-12 row z-2 position-absolute d-flex justify-content-center align-content-center">
-                                            <a href="#ImagenGrande9" class="arrow-xo col-md-1 z-1 d-flex justify-content-start align-items-center"><img src="../assent/img/Iconos_Xo/dos-flechas-derecha1.png" alt="arrow-xo"></a>
-                                            <a href="#ImagenGrande2" class="arrow-xo col-md-1 z-1 d-flex justify-content-end align-items-center"><img src="../assent/img/Iconos_Xo/dos-flechas-derecha2.png" alt="arrow-xo"></a>
+                                        <div class="container-row-xo">
+                                            <a href="#ImagenGrande9" class="arrow-xo"><img src="../assent/img/Iconos_Xo/dos-flechas-derecha1.png" alt="arrow-xo"></a>
+                                            <a href="#ImagenGrande2" class="arrow-xo"><img src="../assent/img/Iconos_Xo/dos-flechas-derecha2.png" alt="arrow-xo"></a>
                                         </div>
                                         <img src="../assent/img/TrabajosXo/trabajos muestra (1).jpeg" alt="ImagenGrande">
 
                                     </div>
                             </div>
 
-                            <div class="img-catalogo-xo col-10 col-sm-5 col-md-2 col-lg-1 activeimgcat1 d-flex justify-content-center align-items-center text-center">
-
-                                <div class="container-cuadro-xo col-md-12 d-flex justify-content-center align-items-center text-center">
-                                    <a href="#ImagenGrande2" class="col-md-12 d-flex justify-content-center align-items-center text-center"><img src="../assent/img/Iconos_Xo/cuadrado.png" alt="Cuadrado" class="img-cuadrado col-md-4"></a>
-                                </div>
-                                <img src="../assent/img/TrabajosXo/trabajos muestra (2).jpeg" id="ImagenPequeña2" alt="Trabajo1" loading="lazy">
-
-                            </div> 
-
-                            <div id="ImagenGrande2" class="ModalDialog col-lg-12">
-                                <div class="container-x-xo col-md 12 z-3 position-absolute d-flex justify-content-end align-items-start text-center">
-                                    <a href="#ImagenPequeña2" class="btn-cerrar col-md-2 d-flex justify-content-center align-items-center"><img src="../assent/img/Iconos_Xo/cancelar.png" alt="x-img-xo"></a>
+                            <div id="ImagenGrande2" class="ModalDialog">
+                                <div class="container-x-xo">
+                                    <a href="#ImagenPequeña2" class="btn-cerrar"><img src="../assent/img/Iconos_Xo/cancelar.png" alt="x-img-xo"></a>
                                 </div>
                                     <div class="ModalContent">
 
-                                        <div class="container-row-xo col-md-12 row z-2 position-absolute d-flex justify-content-center align-content-center">
-                                            <a href="#ImagenGrande" class="arrow-xo col-md-1 z-1 d-flex justify-content-start align-items-center"><img src="../assent/img/Iconos_Xo/dos-flechas-derecha1.png" alt="arrow-xo"></a>
-                                            <a href="#ImagenGrande3" class="arrow-xo col-md-1 z-1 d-flex justify-content-end align-items-center"><img src="../assent/img/Iconos_Xo/dos-flechas-derecha2.png" alt="arrow-xo"></a>
+                                        <div class="container-row-xo">
+                                            <a href="#ImagenGrande" class="arrow-xo"><img src="../assent/img/Iconos_Xo/dos-flechas-derecha1.png" alt="arrow-xo"></a>
+                                            <a href="#ImagenGrande3" class="arrow-xo"><img src="../assent/img/Iconos_Xo/dos-flechas-derecha2.png" alt="arrow-xo"></a>
                                         </div>
                                         <img src="../assent/img/TrabajosXo/trabajos muestra (2).jpeg" alt="ImagenGrande">
 
                                     </div>
                             </div>
 
-                            <div class="img-catalogo-xo col-10 col-sm-5 col-md-2 col-lg-1 activeimgcat1 d-flex justify-content-center align-items-center text-center">
-
-                                <div class="container-cuadro-xo col-md-12 d-flex justify-content-center align-items-center text-center">
-                                    <a href="#ImagenGrande3" class="col-md-12 d-flex justify-content-center align-items-center text-center"><img src="../assent/img/Iconos_Xo/cuadrado.png" alt="Cuadrado" class="img-cuadrado col-md-4"></a>
-                                </div>
-                                <img src="../assent/img/TrabajosXo/trabajos muestra (3).jpeg" id="ImagenPequeña3" alt="Trabajo1" loading="lazy">
-
-                            </div> 
-
-                            <div id="ImagenGrande3" class="ModalDialog col-lg-12">
-                                <div class="container-x-xo col-md 12 z-3 position-absolute d-flex justify-content-end align-items-start text-center">
-                                    <a href="#ImagenPequeña3" class="btn-cerrar col-md-2 d-flex justify-content-center align-items-center"><img src="../assent/img/Iconos_Xo/cancelar.png" alt="x-img-xo"></a>
+                            <div id="ImagenGrande3" class="ModalDialog">
+                                <div class="container-x-xo">
+                                    <a href="#ImagenPequeña3" class="btn-cerrar"><img src="../assent/img/Iconos_Xo/cancelar.png" alt="x-img-xo"></a>
                                 </div>
                                     <div class="ModalContent">
 
-                                        <div class="container-row-xo col-md-12 row z-2 position-absolute d-flex justify-content-center align-content-center">
-                                            <a href="#ImagenGrande2" class="arrow-xo col-md-1 z-1 d-flex justify-content-start align-items-center"><img src="../assent/img/Iconos_Xo/dos-flechas-derecha1.png" alt="arrow-xo"></a>
-                                            <a href="#ImagenGrande4" class="arrow-xo col-md-1 z-1 d-flex justify-content-end align-items-center"><img src="../assent/img/Iconos_Xo/dos-flechas-derecha2.png" alt="arrow-xo"></a>
+                                        <div class="container-row-xo">
+                                            <a href="#ImagenGrande2" class="arrow-xo"><img src="../assent/img/Iconos_Xo/dos-flechas-derecha1.png" alt="arrow-xo"></a>
+                                            <a href="#ImagenGrande4" class="arrow-xo"><img src="../assent/img/Iconos_Xo/dos-flechas-derecha2.png" alt="arrow-xo"></a>
                                         </div>
                                         <img src="../assent/img/TrabajosXo/trabajos muestra (3).jpeg" alt="ImagenGrande">
 
                                     </div>
                             </div>
                         
-                            <div class="img-catalogo-xo col-10 col-sm-5 col-md-2 col-lg-1 activeimgcat2 d-flex justify-content-center align-items-center text-center">
-
-                                <div class="container-cuadro-xo col-md-12 d-flex justify-content-center align-items-center text-center">
-                                    <a href="#ImagenGrande4" class="col-md-12 d-flex justify-content-center align-items-center text-center"><img src="../assent/img/Iconos_Xo/cuadrado.png" alt="Cuadrado" class="img-cuadrado col-md-4"></a>
-                                </div>
-                                <img src="../assent/img/TrabajosXo/trabajos muestra (4).jpeg" id="ImagenPequeña4" alt="Trabajo1" loading="lazy">
-
-                            </div> 
-
-                            <div id="ImagenGrande4" class="ModalDialog col-lg-12">
-                                <div class="container-x-xo col-md 12 z-3 position-absolute d-flex justify-content-end align-items-start text-center">
-                                    <a href="#ImagenPequeña4" class="btn-cerrar col-md-2 d-flex justify-content-center align-items-center"><img src="../assent/img/Iconos_Xo/cancelar.png" alt="x-img-xo"></a>
+                            <div id="ImagenGrande4" class="ModalDialog">
+                                <div class="container-x-xo">
+                                    <a href="#ImagenPequeña4" class="btn-cerrar"><img src="../assent/img/Iconos_Xo/cancelar.png" alt="x-img-xo"></a>
                                 </div>
                                     <div class="ModalContent">
 
-                                        <div class="container-row-xo col-md-12 row z-2 position-absolute d-flex justify-content-center align-content-center">
-                                            <a href="#ImagenGrande3" class="arrow-xo col-md-1 z-1 d-flex justify-content-start align-items-center"><img src="../assent/img/Iconos_Xo/dos-flechas-derecha1.png" alt="arrow-xo"></a>
-                                            <a href="#ImagenGrande5" class="arrow-xo col-md-1 z-1 d-flex justify-content-end align-items-center"><img src="../assent/img/Iconos_Xo/dos-flechas-derecha2.png" alt="arrow-xo"></a>
+                                        <div class="container-row-xo">
+                                            <a href="#ImagenGrande3" class="arrow-xo"><img src="../assent/img/Iconos_Xo/dos-flechas-derecha1.png" alt="arrow-xo"></a>
+                                            <a href="#ImagenGrande5" class="arrow-xo"><img src="../assent/img/Iconos_Xo/dos-flechas-derecha2.png" alt="arrow-xo"></a>
                                         </div>
                                         <img src="../assent/img/TrabajosXo/trabajos muestra (4).jpeg" alt="ImagenGrande">
                                         
                                     </div>
                             </div>
 
-                            <div class="img-catalogo-xo col-10 col-sm-5 col-md-2 col-lg-1 activeimgcat2 d-flex justify-content-center align-items-center text-center">
-
-                                <div class="container-cuadro-xo col-md-12 d-flex justify-content-center align-items-center text-center">
-                                    <a href="#ImagenGrande5" class="col-md-12 d-flex justify-content-center align-items-center text-center"><img src="../assent/img/Iconos_Xo/cuadrado.png" alt="Cuadrado" class="img-cuadrado col-md-4"></a>
-                                </div>
-                                <img src="../assent/img/TrabajosXo/trabajos muestra (5).jpeg" id="ImagenPequeña5" alt="Trabajo1" loading="lazy">
-
-                            </div> 
-
-                            <div id="ImagenGrande5" class="ModalDialog col-lg-12">
-                                <div class="container-x-xo col-md 12 z-3 position-absolute d-flex justify-content-end align-items-start text-center">
-                                    <a href="#ImagenPequeña5" class="btn-cerrar col-md-2 d-flex justify-content-center align-items-center"><img src="../assent/img/Iconos_Xo/cancelar.png" alt="x-img-xo"></a>
+                            <div id="ImagenGrande5" class="ModalDialog">
+                                <div class="container-x-xo">
+                                    <a href="#ImagenPequeña5" class="btn-cerrar"><img src="../assent/img/Iconos_Xo/cancelar.png" alt="x-img-xo"></a>
                                 </div>
                                     <div class="ModalContent">
 
-                                        <div class="container-row-xo col-md-12 row z-2 position-absolute d-flex justify-content-center align-content-center">
-                                            <a href="#ImagenGrande4" class="arrow-xo col-md-1 z-1 d-flex justify-content-start align-items-center"><img src="../assent/img/Iconos_Xo/dos-flechas-derecha1.png" alt="arrow-xo"></a>
-                                            <a href="#ImagenGrande6" class="arrow-xo col-md-1 z-1 d-flex justify-content-end align-items-center"><img src="../assent/img/Iconos_Xo/dos-flechas-derecha2.png" alt="arrow-xo"></a>
+                                        <div class="container-row-xo">
+                                            <a href="#ImagenGrande4" class="arrow-xo"><img src="../assent/img/Iconos_Xo/dos-flechas-derecha1.png" alt="arrow-xo"></a>
+                                            <a href="#ImagenGrande6" class="arrow-xo"><img src="../assent/img/Iconos_Xo/dos-flechas-derecha2.png" alt="arrow-xo"></a>
                                         </div>
                                         <img src="../assent/img/TrabajosXo/trabajos muestra (5).jpeg" alt="ImagenGrande">
 
                                     </div>
                             </div>
 
-                            <div class="img-catalogo-xo col-10 col-sm-5 col-md-2 col-lg-1 activeimgcat2 d-flex justify-content-center align-items-center text-center">
-
-                                <div class="container-cuadro-xo col-md-12 d-flex justify-content-center align-items-center text-center">
-                                    <a href="#ImagenGrande6" class="col-md-12 d-flex justify-content-center align-items-center text-center"><img src="../assent/img/Iconos_Xo/cuadrado.png" alt="Cuadrado" class="img-cuadrado col-md-4"></a>
-                                </div>
-                                <img src="../assent/img/TrabajosXo/trabajos muestra (6).jpeg" id="ImagenPequeña6" alt="Trabajo1" loading="lazy">
-
-                            </div> 
-
-                            <div id="ImagenGrande6" class="ModalDialog col-lg-12">
-                                <div class="container-x-xo col-md 12 z-3 position-absolute d-flex justify-content-end align-items-start text-center">
-                                    <a href="#ImagenPequeña6" class="btn-cerrar col-md-2 d-flex justify-content-center align-items-center"><img src="../assent/img/Iconos_Xo/cancelar.png" alt="x-img-xo"></a>
+                            <div id="ImagenGrande6" class="ModalDialog">
+                                <div class="container-x-xo">
+                                    <a href="#ImagenPequeña6" class="btn-cerrar"><img src="../assent/img/Iconos_Xo/cancelar.png" alt="x-img-xo"></a>
                                 </div>
                                     <div class="ModalContent">
 
-                                        <div class="container-row-xo col-md-12 row z-2 position-absolute d-flex justify-content-center align-content-center">
-                                            <a href="#ImagenGrande5" class="arrow-xo col-md-1 z-1 d-flex justify-content-start align-items-center"><img src="../assent/img/Iconos_Xo/dos-flechas-derecha1.png" alt="arrow-xo"></a>
-                                            <a href="#ImagenGrande7" class="arrow-xo col-md-1 z-1 d-flex justify-content-end align-items-center"><img src="../assent/img/Iconos_Xo/dos-flechas-derecha2.png" alt="arrow-xo"></a>
+                                        <div class="container-row-xo">
+                                            <a href="#ImagenGrande5" class="arrow-xo"><img src="../assent/img/Iconos_Xo/dos-flechas-derecha1.png" alt="arrow-xo"></a>
+                                            <a href="#ImagenGrande7" class="arrow-xo"><img src="../assent/img/Iconos_Xo/dos-flechas-derecha2.png" alt="arrow-xo"></a>
                                         </div>
                                         <img src="../assent/img/TrabajosXo/trabajos muestra (6).jpeg" alt="ImagenGrande">
 
                                     </div>
                             </div>
 
-                            <div class="img-catalogo-xo col-10 col-sm-5 col-md-2 col-lg-1 activeimgcat3 d-flex justify-content-center align-items-center text-center">
-
-                                <div class="container-cuadro-xo col-md-12 d-flex justify-content-center align-items-center text-center">
-                                    <a href="#ImagenGrande7" class="col-md-12 d-flex justify-content-center align-items-center text-center"><img src="../assent/img/Iconos_Xo/cuadrado.png" alt="Cuadrado" class="img-cuadrado col-md-4"></a>
-                                </div>
-                                <img src="../assent/img/TrabajosXo/trabajos muestra (7).jpeg" id="ImagenPequeña7" alt="Trabajo1" loading="lazy">
-
-                            </div> 
-
-                            <div id="ImagenGrande7" class="ModalDialog col-lg-12">
-                                <div class="container-x-xo col-md 12 z-3 position-absolute d-flex justify-content-end align-items-start text-center">
-                                    <a href="#ImagenPequeña7" class="btn-cerrar col-md-2 d-flex justify-content-center align-items-center"><img src="../assent/img/Iconos_Xo/cancelar.png" alt="x-img-xo"></a>
+                            <div id="ImagenGrande7" class="ModalDialog">
+                                <div class="container-x-xo">
+                                    <a href="#ImagenPequeña7" class="btn-cerrar"><img src="../assent/img/Iconos_Xo/cancelar.png" alt="x-img-xo"></a>
                                 </div>
                                     <div class="ModalContent">
 
-                                        <div class="container-row-xo col-md-12 row z-2 position-absolute d-flex justify-content-center align-content-center">
-                                            <a href="#ImagenGrande6" class="arrow-xo col-md-1 z-1 d-flex justify-content-start align-items-center"><img src="../assent/img/Iconos_Xo/dos-flechas-derecha1.png" alt="arrow-xo"></a>
-                                            <a href="#ImagenGrande8" class="arrow-xo col-md-1 z-1 d-flex justify-content-end align-items-center"><img src="../assent/img/Iconos_Xo/dos-flechas-derecha2.png" alt="arrow-xo"></a>
+                                        <div class="container-row-xo">
+                                            <a href="#ImagenGrande6" class="arrow-xo"><img src="../assent/img/Iconos_Xo/dos-flechas-derecha1.png" alt="arrow-xo"></a>
+                                            <a href="#ImagenGrande8" class="arrow-xo"><img src="../assent/img/Iconos_Xo/dos-flechas-derecha2.png" alt="arrow-xo"></a>
                                         </div>
                                         <img src="../assent/img/TrabajosXo/trabajos muestra (7).jpeg" alt="ImagenGrande">
 
                                     </div>
                             </div>
 
-                            <div class="img-catalogo-xo col-10 col-sm-5 col-md-2 col-lg-1 activeimgcat3 d-flex justify-content-center align-items-center text-center">
-
-                                <div class="container-cuadro-xo col-md-12 d-flex justify-content-center align-items-center text-center">
-                                    <a href="#ImagenGrande8" class="col-md-12 d-flex justify-content-center align-items-center text-center"><img src="../assent/img/Iconos_Xo/cuadrado.png" alt="Cuadrado" class="img-cuadrado col-md-4"></a>
-                                </div>
-                                <img src="../assent/img/TrabajosXo/trabajos muestra (8).jpeg" id="ImagenPequeña8" alt="Trabajo1" loading="lazy">
-
-                            </div> 
-
-                            <div id="ImagenGrande8" class="ModalDialog col-Small-12">
-                                <div class="container-x-xo col-md 12 z-3 position-absolute d-flex justify-content-end align-items-start text-center">
-                                    <a href="#ImagenPequeña8" class="btn-cerrar col-md-2 d-flex justify-content-center align-items-center"><img src="../assent/img/Iconos_Xo/cancelar.png" alt="x-img-xo"></a>
+                            <div id="ImagenGrande8" class="ModalDialog">
+                                <div class="container-x-xo">
+                                    <a href="#ImagenPequeña8" class="btn-cerrar"><img src="../assent/img/Iconos_Xo/cancelar.png" alt="x-img-xo"></a>
                                 </div>
                                     <div class="ModalContent">
 
-                                        <div class="container-row-xo col-md-12 row z-2 position-absolute d-flex justify-content-center align-content-center">
-                                            <a href="#ImagenGrande7" class="arrow-xo col-md-1 z-1 d-flex justify-content-start align-items-center"><img src="../assent/img/Iconos_Xo/dos-flechas-derecha1.png" alt="arrow-xo"></a>
-                                            <a href="#ImagenGrande9" class="arrow-xo col-md-1 z-1 d-flex justify-content-end align-items-center"><img src="../assent/img/Iconos_Xo/dos-flechas-derecha2.png" alt="arrow-xo"></a>
+                                        <div class="container-row-xo">
+                                            <a href="#ImagenGrande7" class="arrow-xo"><img src="../assent/img/Iconos_Xo/dos-flechas-derecha1.png" alt="arrow-xo"></a>
+                                            <a href="#ImagenGrande9" class="arrow-xo"><img src="../assent/img/Iconos_Xo/dos-flechas-derecha2.png" alt="arrow-xo"></a>
                                         </div>
                                         <img src="../assent/img/TrabajosXo/trabajos muestra (8).jpeg" alt="ImagenGrande">
 
                                     </div>
                             </div>
 
-                            <div class="img-catalogo-xo col-10 col-sm-5 col-md-2 col-lg-1 activeimgcat3 d-flex justify-content-center align-items-center text-center">
-
-                                <div class="container-cuadro-xo col-md-12 d-flex justify-content-center align-items-center text-center">
-                                    <a href="#ImagenGrande9" class="col-md-12 d-flex justify-content-center align-items-center text-center"><img src="../assent/img/Iconos_Xo/cuadrado.png" alt="Cuadrado" class="img-cuadrado col-md-4"></a>
-                                </div>
-                                <img src="../assent/img/TrabajosXo/trabajos muestra (9).jpeg" id="ImagenPequeña9" alt="Trabajo1" loading="lazy">
-
-                            </div> 
-
-                            <div id="ImagenGrande9" class="ModalDialog col-lg-12">
-                                <div class="container-x-xo col-md 12 z-3 position-absolute d-flex justify-content-end align-items-start text-center">
-                                    <a href="#ImagenPequeña9" class="btn-cerrar col-md-2 d-flex justify-content-center align-items-center"><img src="../assent/img/Iconos_Xo/cancelar.png" alt="x-img-xo"></a>
+                            <div id="ImagenGrande9" class="ModalDialog">
+                                <div class="container-x-xo">
+                                    <a href="#ImagenPequeña9" class="btn-cerrar"><img src="../assent/img/Iconos_Xo/cancelar.png" alt="x-img-xo"></a>
                                 </div>
                                     <div class="ModalContent">
 
-                                        <div class="container-row-xo col-md-12 row z-2 position-absolute d-flex justify-content-center align-content-center">
-                                            <a href="#ImagenGrande8" class="arrow-xo col-md-1 z-1 d-flex justify-content-start align-items-center"><img src="../assent/img/Iconos_Xo/dos-flechas-derecha1.png" alt="arrow-xo"></a>
-                                            <a href="#ImagenGrande" class="arrow-xo col-md-1 z-1 d-flex justify-content-end align-items-center"><img src="../assent/img/Iconos_Xo/dos-flechas-derecha2.png" alt="arrow-xo"></a>
+                                        <div class="container-row-xo">
+                                            <a href="#ImagenGrande8" class="arrow-xo"><img src="../assent/img/Iconos_Xo/dos-flechas-derecha1.png" alt="arrow-xo"></a>
+                                            <a href="#ImagenGrande" class="arrow-xo"><img src="../assent/img/Iconos_Xo/dos-flechas-derecha2.png" alt="arrow-xo"></a>
                                         </div>
                                         <img src="../assent/img/TrabajosXo/trabajos muestra (9).jpeg" alt="ImagenGrande">
 
                                     </div>
                             </div>
 
-                            <div class="container-buttom-more-xo col-lg-12 activebottomore d-flex justify-content-center align-items-center text-center">
-                                <button class="btn-more col-md-2">Ver Mas modelos</button>
-                            </div>
-
                 </div>
 
+                <div class="container-buttom-more-xo activebottomore">
+                    <button class="btn-more col-md-2">Ver Mas modelos</button>
                 </div>
 
             </div>

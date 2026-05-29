@@ -1,27 +1,27 @@
 /*Efecto del nav al bajar*/
 
-const navAction = [
-	{id: "nav-action", className: "is-scrolled"},
-	{id: "nav-who-action", className: "is-scrolled-who"}
-]
+// const navAction = [
+// 	{id: "nav-action", className: "is-scrolled"},
+// 	{id: "nav-who-action", className: "is-scrolled-who"}
+// ]
 
-const elementosDOM = navAction.map(item => ({
-	el: document.getElementById(item.id),
-	className: item.className
-}));
+// const elementosDOM = navAction.map(item => ({
+// 	el: document.getElementById(item.id),
+// 	className: item.className
+// }));
 
-window.addEventListener("scroll", () =>{
-	const scrollNav = window.scrollY;
-	const isMobile = window.innerWidth <= 768;
+// window.addEventListener("scroll", () =>{
+// 	const scrollNav = window.scrollY;
+// 	const isMobile = window.innerWidth <= 768;
 	
-	elementosDOM.forEach(({el, className}) =>{
-		if (!isMobile && scrollNav > 100) {
-			el.classList.add(className);
-		} else {
-			el.classList.remove(className);
-		}
-	});
-});
+// 	elementosDOM.forEach(({el, className}) =>{
+// 		if (!isMobile && scrollNav > 100) {
+// 			el.classList.add(className);
+// 		} else {
+// 			el.classList.remove(className);
+// 		}
+// 	});
+// });
 
 /*active para menu despegable*/
 
