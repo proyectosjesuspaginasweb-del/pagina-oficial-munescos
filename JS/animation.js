@@ -1,27 +1,27 @@
 /*Efecto del nav al bajar*/
 
-// const navAction = [
-// 	{id: "nav-action", className: "is-scrolled"},
-// 	{id: "nav-who-action", className: "is-scrolled-who"}
-// ]
+ const navAction = [
+ {id: "nav-action", className: "is-scrolled"},
+ {id: "nav-who-action", className: "is-scrolled-who"}
+ ]
 
-// const elementosDOM = navAction.map(item => ({
-// 	el: document.getElementById(item.id),
-// 	className: item.className
-// }));
+ const elementosDOM = navAction.map(item => ({
+ 	el: document.getElementById(item.id),
+     className: item.className
+ }));
 
-// window.addEventListener("scroll", () =>{
-// 	const scrollNav = window.scrollY;
-// 	const isMobile = window.innerWidth <= 768;
+     window.addEventListener("scroll", () =>{
+     const scrollNav = window.scrollY;
+     const isMobile = window.innerWidth <= 568;
 	
-// 	elementosDOM.forEach(({el, className}) =>{
-// 		if (!isMobile && scrollNav > 100) {
-// 			el.classList.add(className);
-// 		} else {
-// 			el.classList.remove(className);
-// 		}
-// 	});
-// });
+     elementosDOM.forEach(({el, className}) =>{
+         if (!isMobile && scrollNav > 100) {
+             el.classList.add(className);
+       } else {
+        el.classList.remove(className);
+    }
+    });
+});
 
 /*active para menu despegable*/
 
@@ -179,3 +179,27 @@ function buildSeamlessLoop(items, spacing, animateFunc) {
 });
 
 /*Fin efecto de size de xo*/
+
+/*BTN STWICH CLARO/OSCURO*/
+
+/*Boton de modo oscuro/claro*/
+
+const temaCheckbox = document.getElementById("theme-checkbox");
+const imgWho = document.querySelector(".ContainerWhoXo");
+const btnBlack = document.querySelector(".slider");
+
+temaCheckbox.addEventListener("change", ()=>{
+
+    if (temaCheckbox.checked) {
+        document.body.classList.add("dark-mode");
+        console.log("Modo Oscuro Activado");
+        imgWho.classList.add("the-containercontactXo");
+        btnBlack.classList.add("mode-black-slider")
+
+    } else {
+        document.body.classList.remove("dark-mode");
+        console.log("Modo Claro Activado");
+        imgWho.classList.remove("the-containercontactXo");
+        btnBlack.classList.remove("mode-black-slider")
+    }
+});
