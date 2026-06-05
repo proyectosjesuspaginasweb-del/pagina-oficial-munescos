@@ -149,7 +149,7 @@ footer > .container-fluid{
 /******CONTAINER WHO AND NAV*******/
 
 .container-fluid{
-    border: yellow 1px solid;
+    /* border: yellow 1px solid; */
     overflow: hidden;
     max-width: 100%;
     max-height: 850px;
@@ -319,6 +319,7 @@ input:checked + .slider:before {
     display: flex;
     flex-direction: row;
     justify-content: end;
+    gap: 20px;
 }
 
 .nav-optiones-xo > li{
@@ -373,6 +374,7 @@ input:checked + .slider:before {
     /*efecto vidrio templado*/
     gap: 20px;
     padding: 0 30px;
+    min-width: 83%;
 }
 
 .container-titleandtext > span{
@@ -389,10 +391,19 @@ input:checked + .slider:before {
 
 .primary-img-who-xo{
     /* border: seagreen 1px solid; */
-    min-height: 598px;
+    min-height: 600px;
+    min-width: 50%;
     display: flex;
-    justify-content: center;
+    justify-items: center;
     align-items: center;
+    object-fit: cover;
+    object-position: center;
+}
+
+.img-fluid{
+    /* border: turquoise 1px solid; */
+    min-width: 100%;
+    min-height: 397px;
 }
 
 /*CONTENEDOR AIM*/
@@ -1162,14 +1173,6 @@ footer{
     filter: drop-shadow(0 2px 10px rgb(206, 199, 206)); /* Sombra ligera */
 }
 
-.back-footer-xo{
-    background: url(../assent/img/Iconos_Xo/BochasoRosa.png) no-repeat center center / 700px;
-    min-height: 429px;
-    max-width: 98%;
-    position: absolute;
-    z-index: 0;
-}
-
 /*WHATSAPP*/
 
 .primary-whatsApp{
@@ -1241,240 +1244,348 @@ footer{
 
 /*MEDIAS RESPONSIVE*/
 
-@media screen and (max-width: 320px) {
-
-    /**ICONO HAMBUERGER***/
-    .icon-hamburger-nav{
-        padding-right: 15px;
-    }
-}
-
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 769px) {
 
     .container-fluid{
-        border: yellow 2px solid;
-        min-height: 1370px;
-        overflow: hidden;
-    }
-
-    /*CONTENEDOR DE NAV Y WHO*/
-
-    .mode-black{
-        /* border: orange 1px solid; */
+        /* border: yellow 1px solid; */
+        min-height: 1100px;
         min-width: 100%;
-        min-height: 50%;
-        align-content: center;
-        justify-items: center;
     }
 
-    .icon-hamburger-nav{
-        /* border: seagreen 1px solid; */
+    /*btn openaction*/
+
+    .btn-action-nav{
+        position: fixed;
+        background: var(--Blanco) url(../assent/img/Imagen_fondos/ondas-rosas-xo.png) no-repeat center / cover;
         min-width: 100%;
-        max-height: 100%;
-    }
-
-    .navpeelable{
-        /* border: springgreen 1px solid; */
-        min-width: 50px;
-        max-height: 50px;
-    }
-
-    .scroll-action-nav{
-        position: absolute;
-        background: var(--Blanco);
-        height: 10vh;
-        width: 100%;
         top: 0;
         left: 0;
-    }
-
-    @media iconactivehamburguer {
-        to{
-            transform: translateY(100px);
-        } from{
-            transform: translateY(0);
-        }
-    }
-
-    /**WHO**/
-
-    .primary-nav-who{
-        /* border: rgb(202, 76, 67) 1px solid; */
-        min-height: 1370px;
-    }
-
-    .bg-video{
-        /* border: rgb(5, 184, 20) 2px solid; */
-        min-height: 1370px;
-    }
-
-    .video-xo{
-        /* border: rgb(211, 7, 7) 2px solid; */
-        min-height: 1370px;
-    }
-
-    .hero-content{
-        /* border: rgb(11, 250, 238) 2px solid; */
-        min-height: 1350px;
-    }
-
-    .container-img-nav{
-        /* border: rgb(215, 234, 235) 2px solid; */
-        min-height: 520px;
+        transform: translateY(0);
+        z-index: 999;
+        animation: activemenu 2s ease;
         gap: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        
     }
 
-    .primary-img-xo{
-        /* border: rgb(121, 7, 105) 2px solid; */
-        display: flex;
-        align-content: center;
-        justify-content: center;
+    @keyframes activemenu {
+    from{
+        transform: translateY(-100px);
+    }to{
+        transform: translateY(0);
+        transition: 2s all ease;
+    }
+    }
+
+    .menu-open{
+        /* border: turquoise 1px solid; */
+        top: 0;
+        left: 0;
         max-height: 400px;
     }
 
-    .img-log-xo{
-        /* border: slateblue 2px solid; */
-        min-height: 100%;
-    }
-
-    .primary-nav{
-        /* border: yellow 2px solid; */
-        min-height: 100px;
-    }
-
-    .primary-who-xo{
-        /* border: rgb(248, 242, 241) 2px solid; */
-        max-height: 950px;
-    }
-
-    .primary-img-who-xo{
-        /* border: tomato 2px solid; */
-        max-height: 400px;
-    }
-
-    .img-fluid{
-        max-height: auto;
-        min-height: 330px;
-        min-width: 100vw;
-    }
-
-    /**AIM**/
-
-    .primary-aim{
-        /* border: turquoise 2px solid; */
-        min-height: min-content;
-        gap: 40px;
-    }
-
-    .tittle-aim-primary{
-        text-align: center;
-        font-size: 10px;
+    .menu-open .nav-optiones-xo{
+        display: inline-block;
+        min-width: 100%;
+        /* border: tomato 1px solid; */
+        padding: 0;
         margin: 0;
     }
 
-    .tittle-aim-xo{
-        font-size: 20px;
-        min-width: 125% !important;
+    .menu-open .nav-optiones-xo > li{
+        /* border: turquoise 1px solid; */
+        justify-content: center;
     }
 
-    .text-aim-primary{
-        /* border: rgba(80, 3, 76, 0.37) 1px solid; */
-        height: auto;
-        gap: 23px;
+    .menu-open .navpeelable{
+        animation: none;
     }
 
-    .text-aim{
-        min-height: 30vh;
+    .menu-open .icon-hamburger-nav{
+        /* border: steelblue 1px solid; */
+        min-height: 150px;
+        align-items: center;
     }
 
-    .icon-objetivo-xo{
-        padding-bottom: 23px;
+    .dark-mode .nav-optiones-xo > li > a{
+    color: var(--Blanco);
     }
 
-    .back-aim-primary2{
+    .dark-mode .btn-action-nav{
+        background-color: var(--Negro);
+    }
+
+    /*NAV AND WHO CONTAINER*/
+
+    .hero-content-who{
+        /* border: blue solid 2px; */
+        min-height: 1090px;
+        max-width: 100%;
+    }
+
+    .primary-img-nav{
+        /* border: navy 1px solid; */
+        max-height: 400px;
+        flex-direction: column;
+        min-width: 100%;
+    }
+
+    .nav-optiones-xo{
+        display: none;
+    }
+
+    .is-scrolled{
+        animation: none;
+        display: none!important;
+    }
+
+    .primary-img-xo{
+        min-height: auto;
+        display: flex;
+        align-items: end;
+    }
+    
+
+    .primary-img-xo > img{
+        max-width: 40%;
+        max-height: 200px;
+    }
+
+    .primary-nav{
         /* border: teal 1px solid; */
-        min-height: auto;
+        min-width: 100%;
+        min-height: 150px;
     }
 
-    /***GALLERY*****/
+    .container-switch{
+        /* border: red 1px solid; */
+        justify-content: center;
+        min-width: 100%;
+    }
 
-    .gallery{
-        position: relative;
-        right: 8px;
-        min-height: 50vh;
+    .switch{
+        /* border: seagreen 1px solid; */
+        justify-content: center;
+        max-width: 100%;
+    }
+
+    .icon-hamburger-nav{
+        /* border: blue 1px solid; */
+        display: inline-block;
         display: flex;
         justify-content: center;
-        align-content: center;
-        /* border: teal 2px solid; */
+        min-width: 100%;
+        min-height: 45px;
     }
 
-    .cards{
-        display: flex;
-        justify-content: center;
-        /* border: springgreen 1px solid; */
+    .navpeelable{
+        /* border: turquoise 1px solid; */
+        min-width: 13%;
+        max-height: 67px;
+        position: fixed;
+        z-index: 999;
+        transition: left 3s ease;
     }
 
-    .cards li{
-        max-width: 77%;
-        min-height: auto;
-    }
+    /* AGREGA ESTA CLASE */
+    .navpeelable.scrolled {
+    left: calc(100vw - 80px);
+    transition: 2s all;
+}
 
-    /****CATALOGO****/
-
-    .catalogo-primary-xo{
-        min-height: 374vh;
-        gap: 30px;
-        /* border: #88ce02 2px solid; */
-    }
-
-    .primary-imgcatalogo-xo{
-        width: 100;
-        display: grid;
-        gap: 0!important;
-        height: 316vh;
-        /* border: red 2px solid; */
-    }
-
-    .container-catalogo-xo{
-        /* border: yellow 2px solid; */
-        min-height: 300vh;
-    }
-
-    /***WHY***/
-
-    .container-process-xo{
-        /* border: steelblue 2px solid; */
-        display: flex;
+    .primary-who-xo{
+        /* border: olivedrab 1px solid; */
+        min-height: 750px;
         flex-direction: column;
     }
 
-}
-
-@media (min-width: 768px) and (max-width: 991px){
-
-    .container-fluid:nth-child(2){
-    min-height: 243vh;
-    /* border: yellow 2px solid; */
-    overflow: hidden;
+    .container-titleandtext{
+        /* border: steelblue 1px solid; */
+        max-width: 80%;
+        min-height: 300px;
     }
 
-    /****AIM****/
+    .container-titleandtext > span{
+        font-size: 28px;
+    }
 
-    .primary-aim{
-        position: relative;
-        min-height: 200vh;
-        /* border: blueviolet 2px solid; */
+    .titleandtext-primary-who-xo{
+        min-height: 325px;
+        /* border: turquoise 1px solid; */
+    }
+
+    .container-titleandtext > p{
+        font-size: 15px;
+    }
+
+    .primary-img-who-xo{
+        min-height: 279px;
+    }
+
+    .img-fluid{
+        /* border: tomato 1px solid; */
+        min-height: 200px;
+        min-width: 100%;
+        min-height: 300px;
+    }
+
+    .bg-video-primary{
+        /* border: palegreen 1px solid; */
+        max-height: 1050px;
+    }
+
+    .bg-video{
+        /* border: slateblue 1px solid; */
+        min-height: 1100px;
+    }
+
+    /*AIM*/
+
+    .container-fluid:nth-child(2){
+        /* border: blue 1px solid; */
+        max-height: 1700px;
     }
 
     .tittle-aim-primary{
-        position: relative;
+        min-height: 200px;
+    }
+
+    .tittle-aim-primary > h3{
+        max-width: 80%;
+    }
+
+    .text-aim-primary{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
     }
 
     .text-aim{
-        position: relative;
+        max-width: 80%;
     }
 
-    .back-aim-primary2{
-        min-height: 238vh;
+    .text-aim-primary > article:nth-child(3){
+        max-width: 80%;
+    }
+
+    /*SIZE*/
+
+    .primary-size-xo{
+        gap: 10px;
+        display: grid;
+        min-height: 700px;
+        max-height: 800px;
+    }
+
+    .ContainerImgSizeXo{
+        /* border: springgreen 1px solid; */
+        min-height: 500px;
+        max-height: 900px;
+    }
+
+    .TittleSizeXo > h3{
+        min-width: 80%;
+        min-height: 100px;
+    }
+
+    .gallery{
+        min-width: 100%;
+        /* border: seagreen 1px solid; */
+        min-height: 600px;
+    }
+
+    .cards{
+        /* border: teal 1px solid; */
+        padding: 0;
+        min-height: 700px;
+        max-height: 900px;
+    }
+
+    .cards li{
+        min-width: 60%;
+        min-height: 450px;
+        max-height: 900px;
+    }
+
+    .actions button{
+        min-width: 40%;
+    }
+
+    /*CATALOGO*/
+
+    .container-fluid:nth-child(4){
+        /* border: turquoise 1px solid; */
+        min-height: 5800px;
+    }
+
+    .catalogo-primary-xo{
+        /* border: red 1px solid; */
+        min-height: 5750px;
+    }
+    
+    .primary-imgcatalogo-xo{
+        /* border: steelblue 1px solid; */
+        min-height: 5300px;
+        justify-items: center;
+    }
+
+    .tittle-catalogo-xo > h3{
+        min-width: 80%;
+    }
+
+    .container-catalogo-xo{
+        grid-template-columns: auto;
+        max-width: 95%;
+        display: grid;
+        justify-items: center;
+    }
+
+    .img-catalogo-xo{
+        /* border: seagreen 1px solid; */
+        min-width: 92%;
+    }
+
+    .container-catalogo-xo > .img-catalogo-xo:nth-child(2n+1) > img{
+        max-width: 100%;
+    }
+
+    .container-catalogo-xo > .img-catalogo-xo:nth-child(2n) > img{
+        max-width: 90%;
+    }
+
+    .container-cuadro-xo{
+        display: none;
+    }
+
+    /*PROCESS*/
+
+    .container-process-xo{
+        flex-direction: column;
+    }
+
+    .tittle-process-xo{
+        /* border: peru 1px solid; */
+        min-height: 200px;
+    }
+
+    .text-primary-process > p{
+        min-width: 100%;
+        text-align: center;
+    }
+
+    .footer-primary{
+        /* border: teal 1px solid; */
+        max-width: 91%;
+        min-width: 93%;
+        text-align: center;
+    }
+
+    footer > .container-fluid{
+        min-height: 548px;
+    }
+
+    .back-footer-xo{
+        background: none;
     }
 }

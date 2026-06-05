@@ -1,0 +1,113 @@
+/* ============================================
+   RESPONSIVE - Página de Inicio (index.html)
+   Breakpoints: 480px | 769px | 1024px
+   ============================================ */
+
+/* TABLET (770px - 1024px) */
+@media screen and (min-width: 770px) and (max-width: 1024px) {
+
+    .container-primary-welcomen{
+        min-height: 100vh;
+    }
+
+    .container-primary{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .letters-welcomen span{
+        font-size: 4rem;
+    }
+
+    .btn-primary{
+        max-width: 250px;
+        min-height: 55px;
+    }
+
+    .star-xo{
+        font-size: 1.2rem;
+    }
+
+    .img-creator{
+        max-width: 50px;
+        max-height: 50px;
+    }
+}
+
+/* MOBILE (max-width: 769px) */
+@media screen and (max-width: 769px) {
+
+    .container-primary-welcomen{
+        min-height: 100vh;
+        min-height: 100dvh;
+    }
+
+    .container-primary{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px 10px;
+    }
+
+    .welcom-primary{
+        min-height: auto;
+        padding: 15px !important;
+    }
+
+    .letters-welcomen{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2px;
+    }
+
+    .letters-welcomen span{
+        font-size: 2.8rem;
+    }
+
+    .bottom-welcom{
+        margin-top: 20px;
+    }
+
+    .btn-primary{
+        max-width: 200px;
+        min-height: 50px;
+        border-radius: 25px;
+    }
+
+    .star-xo{
+        font-size: 1rem;
+    }
+
+    .creator-img{
+        justify-content: center !important;
+        padding: 10px !important;
+    }
+
+    .img-creator{
+        max-width: 40px;
+        max-height: 40px;
+    }
+}
+
+/* MOBILE SMALL (max-width: 480px) */
+@media screen and (max-width: 480px) {
+
+    .letters-welcomen span{
+        font-size: 2.2rem;
+    }
+
+    .btn-primary{
+        max-width: 180px;
+        min-height: 45px;
+    }
+
+    .star-xo{
+        font-size: 0.9rem;
+    }
+
+    .img-creator{
+        max-width: 35px;
+        max-height: 35px;
+    }
+}

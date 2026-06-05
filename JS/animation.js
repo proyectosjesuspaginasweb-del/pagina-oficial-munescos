@@ -11,8 +11,9 @@
  }));
 
      window.addEventListener("scroll", () =>{
-     const scrollNav = window.scrollY;
-     const isMobile = window.innerWidth <= 568;
+	const scrollNav = window.scrollY;
+	// Considerar el mismo breakpoint que en CSS (max-width: 769px)
+	const isMobile = window.matchMedia('(max-width: 769px)').matches;
 	
      elementosDOM.forEach(({el, className}) =>{
          if (!isMobile && scrollNav > 100) {
@@ -31,11 +32,10 @@
 const btnAbrir = document.getElementById("activebtnav");
 // Seleccionamos lo que queremos mostrar/ocultar
 const menuOpciones = document.getElementById("navpeelable");
-const containerimgnav = document.getElementById("containerimgnav");
 
 btnAbrir.addEventListener("click", (event) => {
 
-    menuOpciones.classList.toggle("scroll-action-nav");
+    menuOpciones.classList.toggle("btn-action-nav");
     menuOpciones.classList.toggle("menu-open");
 });
 
@@ -82,6 +82,18 @@ const spacing = 0.1, // spacing of the cards (stagger)
         }
     });
 }
+
+/*Efecto de bajar el iconhambuerger hacia la derecha*/
+
+const nav = document.querySelector('.navpeelable');
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+        nav.classList.add('scrolled');
+    } else {
+        nav.classList.remove('scrolled');
+    }
+});
 
 /*aqui se sustituyo el scroll por que los botones hagan el afecto*/
 
