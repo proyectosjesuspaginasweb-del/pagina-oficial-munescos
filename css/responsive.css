@@ -29,14 +29,13 @@
     /**INICIO DE PAGINA XO**/
 
     .creator-img{
-        border: turquoise 1px solid;
+        /* border: turquoise 1px solid; */
     }
 
     .container-fluid{
         /* border: yellow 1px solid; */
-        min-height: 1100px;
+        min-height: 990px;
         min-width: 100%;
-
     }
 
     /*btn openaction*/
@@ -51,8 +50,9 @@
         z-index: 999;
         animation: activemenu 2s ease;
         gap: 0;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        display: grid !important;
+        grid-template-columns: 1fr 1fr 1fr !important;
+        /* border: tomato 1px solid; */
         
     }
 
@@ -107,7 +107,7 @@
 
     .hero-content-who{
         /* border: blue solid 2px; */
-        min-height: 1090px;
+        min-height: 972px;
         max-width: 100%;
     }
 
@@ -178,11 +178,12 @@
         transition: left 3s ease;
     }
 
-    /* AGREGA ESTA CLASE */
     .navpeelable.scrolled {
     left: calc(100vw - 80px);
     transition: 2s all;
-}
+    }
+
+    /**WHO**/
 
 .primary-who-xo{
         /* border: olivedrab 1px solid; */
@@ -222,12 +223,12 @@
 
     .bg-video-primary{
         /* border: palegreen 1px solid; */
-        max-height: 1050px;
+        max-height: 980px;
     }
 
     .bg-video{
         /* border: slateblue 1px solid; */
-        min-height: 1100px;
+        min-height: 990px;
     }
 
     /*AIM*/
@@ -401,4 +402,5 @@
     }
 
 }
+
 
