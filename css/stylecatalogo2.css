@@ -128,7 +128,6 @@ footer > .container-fluid{
     max-height: 100vh !important;
     /* border: blue 1px solid; */
     margin-top: 70px!important;
-    background: url(../assent/img/Imagen_fondos/Fondo-footer.svg) no-repeat bottom;
 }
 
 .text-tarea-primary{
@@ -1250,6 +1249,7 @@ footer{
         /* border: yellow 1px solid; */
         min-height: 1100px;
         min-width: 100%;
+
     }
 
     /*btn openaction*/
@@ -1444,7 +1444,7 @@ footer{
 
     .container-fluid:nth-child(2){
         /* border: blue 1px solid; */
-        max-height: 1700px;
+        min-height: 1560px;
     }
 
     .tittle-aim-primary{
@@ -1459,6 +1459,7 @@ footer{
         display: flex;
         flex-direction: column;
         gap: 50px;
+        min-height: 1400px;
     }
 
     .text-aim{
@@ -1470,6 +1471,12 @@ footer{
     }
 
     /*SIZE*/
+
+    main > .container-fluid:nth-child(3){
+        min-height: 530px;
+        border: salmon 1px solid;
+        max-height: 825px;
+    }
 
     .primary-size-xo{
         gap: 10px;
@@ -1498,7 +1505,7 @@ footer{
     .cards{
         /* border: teal 1px solid; */
         padding: 0;
-        min-height: 700px;
+        min-height: 570px;
         max-height: 900px;
     }
 
@@ -1516,17 +1523,17 @@ footer{
 
     .container-fluid:nth-child(4){
         /* border: turquoise 1px solid; */
-        min-height: 5800px;
+        min-height: 5180px;
     }
 
     .catalogo-primary-xo{
         /* border: red 1px solid; */
-        min-height: 5750px;
+        min-height: 5180px;
     }
     
     .primary-imgcatalogo-xo{
         /* border: steelblue 1px solid; */
-        min-height: 5300px;
+        min-height: 4749px;
         justify-items: center;
     }
 
@@ -1538,7 +1545,7 @@ footer{
         grid-template-columns: auto;
         max-width: 95%;
         display: grid;
-        justify-items: center;
+        justify-items: center;grid-auto-rows: 530px;
     }
 
     .img-catalogo-xo{
@@ -1567,6 +1574,12 @@ footer{
     .tittle-process-xo{
         /* border: peru 1px solid; */
         min-height: 200px;
+        max-width: 100%;
+    }
+
+    .text-primary-process{
+        /* border: steelblue 1px solid; */
+        min-height: 600px;
     }
 
     .text-primary-process > p{
@@ -1574,18 +1587,27 @@ footer{
         text-align: center;
     }
 
+    .tittle-process-xo > h3{
+        min-width: 100%;
+    }
+
+    /**FOOTER**/
+
+    footer > .container-fluid{
+        min-height: 200px;
+    }
+
+    footer {
+        min-height: 300px;
+        /* border: turquoise 1px solid; */
+    }
+
     .footer-primary{
         /* border: teal 1px solid; */
         max-width: 91%;
         min-width: 93%;
         text-align: center;
+        min-height: 300px;
     }
 
-    footer > .container-fluid{
-        min-height: 548px;
-    }
-
-    .back-footer-xo{
-        background: none;
-    }
 }
