@@ -113,9 +113,10 @@
 
     .primary-img-nav{
         /* border: navy 1px solid; */
-        max-height: 400px;
-        flex-direction: column;
+        min-height: 200px;
         min-width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
     .nav-optiones-xo{
@@ -130,19 +131,21 @@
     .primary-img-xo{
         min-height: auto;
         display: flex;
-        align-items: end;
+        align-items: center;
     }
     
 
     .primary-img-xo > img{
-        max-width: 40%;
+        max-width: 62%;
         max-height: 200px;
     }
 
     .primary-nav{
         /* border: teal 1px solid; */
-        min-width: 100%;
+        min-width: 50%;
         min-height: 150px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
     .container-switch{
@@ -398,4 +401,5 @@
     }
 
 }
+
 
