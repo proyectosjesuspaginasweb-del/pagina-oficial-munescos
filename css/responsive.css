@@ -142,7 +142,7 @@
 
     .primary-nav{
         /* border: teal 1px solid; */
-        min-width: 50%;
+        min-width: 100%;
         min-height: 150px;
         display: grid;
         grid-template-columns: 1fr 1fr;
