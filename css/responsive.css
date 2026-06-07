@@ -1,3 +1,10 @@
+@font-face{/*letra para titulos*/
+    font-family: "Lobster";
+    src: url(../assent/fonts/Lobster/Lobster-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* ============================================
    RESPONSIVE - Página de Inicio (index.html)
    Breakpoints: 480px | 769px | 1024px
@@ -15,7 +22,7 @@
 }
 
 @media screen and (max-width: 480px){
-    .btn-ir-inicio{ left: 12px; bottom: 12px; width: 48px; height: 48px; font-size: 22px; }
+    .btn-ir-inicio{ left: 12px; bottom: 12px; width: 48px; height: 48px; font-size: 22px;}
 }
 
 /*Finaliza el estilo de catalogo*/
@@ -36,71 +43,6 @@
         /* border: yellow 1px solid; */
         min-height: 990px;
         min-width: 100%;
-    }
-
-    /*btn openaction*/
-
-    .btn-action-nav{
-        position: fixed;
-        background: var(--Blanco) url(../assent/img/Imagen_fondos/ondas-rosas-xo.png) no-repeat center / cover;
-        min-width: 100%;
-        top: 0;
-        left: 0;
-        transform: translateY(0);
-        z-index: 999;
-        animation: activemenu 2s ease;
-        gap: 0;
-        display: grid !important;
-        grid-template-columns: 1fr 1fr 1fr !important;
-        /* border: tomato 1px solid; */
-        
-    }
-
-    @keyframes activemenu {
-    from{
-        transform: translateY(-100px);
-    }to{
-        transform: translateY(0);
-        transition: 2s all ease;
-    }
-    }
-
-    .menu-open{
-        /* border: turquoise 1px solid; */
-        top: 0;
-        left: 0;
-        max-height: 400px;
-    }
-
-    .menu-open .nav-optiones-xo{
-        display: inline-block;
-        min-width: 100%;
-        /* border: tomato 1px solid; */
-        padding: 0;
-        margin: 0;
-    }
-
-    .menu-open .nav-optiones-xo > li{
-        /* border: turquoise 1px solid; */
-        justify-content: center;
-    }
-
-    .menu-open .navpeelable{
-        animation: none;
-    }
-
-    .menu-open .icon-hamburger-nav{
-        /* border: steelblue 1px solid; */
-        min-height: 150px;
-        align-items: center;
-    }
-
-    .dark-mode .nav-optiones-xo > li > a{
-    color: var(--Blanco);
-    }
-
-    .dark-mode .btn-action-nav{
-        background-color: var(--Negro);
     }
 
     /*NAV AND WHO CONTAINER*/
@@ -137,7 +79,9 @@
 
     .primary-img-xo > img{
         max-width: 62%;
-        max-height: 200px;
+        max-height: 150px;
+        position: fixed;
+        z-index: 999;
     }
 
     .primary-nav{
@@ -182,6 +126,86 @@
     left: calc(100vw - 80px);
     transition: 2s all;
     }
+
+    .modal-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background: white;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-menu.active {
+    display: flex;
+}
+
+.btn-close-modal {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 20%;
+}
+
+.btn-close-modal > img {
+    width: 40px;
+    height: 40px;
+}
+
+.modal-menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    background-color: rgb(252, 9, 179) !important;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background: url(../assent/img/Imagen_fondos/Iconos-herramienta2-fondo.png);
+}
+
+.modal-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.modal-menu ul li a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: var(--Blanco);
+    font-family: Lobster;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.modal-menu ul li a:hover{
+    color: rgb(61, 1, 43);
+}
+
+.btn-ir-inicio{
+    z-index: 999;
+}
+
+.chatbot-widget{
+    z-index: 999;
+}
 
     /**WHO**/
 
