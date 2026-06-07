@@ -26,17 +26,18 @@
 
 /*active para menu despegable*/
 
-/*active para menu despegable*/
+/*MODAL NAV*/
 
-// Seleccionamos el botón específico, no todo el contenedor
 const btnAbrir = document.getElementById("activebtnav");
-// Seleccionamos lo que queremos mostrar/ocultar
-const menuOpciones = document.getElementById("navpeelable");
+const btnCerrar = document.getElementById("close-modal");
+const modalMenu = document.getElementById("modal-menu");
 
-btnAbrir.addEventListener("click", (event) => {
+btnAbrir.addEventListener("click", () => {
+    modalMenu.classList.add("active");
+});
 
-    menuOpciones.classList.toggle("btn-action-nav");
-    menuOpciones.classList.toggle("menu-open");
+btnCerrar.addEventListener("click", () => {
+    modalMenu.classList.remove("active");
 });
 
 /*Efecto de size de xo*/

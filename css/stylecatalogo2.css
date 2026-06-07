@@ -145,6 +145,11 @@ footer > .container-fluid{
     min-height: 8vh;
 }
 
+.modal-menu {
+    display: none;
+}
+
+
 /******CONTAINER WHO AND NAV*******/
 
 .container-fluid{
@@ -1179,7 +1184,7 @@ footer{
     right: 20px;
     bottom: 20px;
     top: auto;
-    z-index: 99999;
+    z-index: 999;
     width: 64px;
     height: 64px;
     display: flex;
@@ -1208,7 +1213,7 @@ footer{
     position: fixed;
     left: 20px; /* pegado al borde izquierdo */
     bottom: 20px; /* misma altura que WhatsApp */
-    z-index: 100000;
+    z-index: 999;
     width: 56px;
     height: 56px;
     background: var(--Rosa-fuerte);
