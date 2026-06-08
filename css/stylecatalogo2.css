@@ -742,6 +742,7 @@ a:hover{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 590px;
+    overflow: hidden;
 }
 
 .img-catalogo-xo{

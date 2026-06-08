@@ -216,3 +216,146 @@ temaCheckbox.addEventListener("change", ()=>{
         btnBlack.classList.remove("mode-black-slider")
     }
 });
+
+/********************************************ANIMATION GSAP PAG**************************************************/
+
+gsap.from('.titleandtext-primary-who-xo', {
+	x: 100,
+	opacity: 0,
+	duration: 1.5,
+	delay: 0.5,
+});
+
+gsap.from('.primary-img-who-xo', {
+	x: 100,
+	opacity: 0,
+	duration: 1.5,
+	delay: 1,
+});
+
+/********SCROLL*********/
+
+const elementScroll = ['.tittle-aim-primary', '.text-aim-primary', '.TittleSizeXo', '.ContainerImgSizeXo', '.tittle-catalogo-xo', '.text-catalogo-xo']
+
+elementScroll.forEach(selector => {
+	gsap.from(selector, {
+		y: 200,
+		opacity: 0,
+		duration: 1.5,
+		scrollTrigger: {
+			trigger: selector,
+			toggleActions: 'play none none reverse',
+			start: '5% 100%',
+			delay: 0.5,
+			// markers: true
+		}
+	});
+});
+
+const actionimgScrolll = ['.action1-img-xo']
+
+actionimgScrolll.forEach(selectoraction =>{
+	gsap.from(selectoraction, {
+		x: 100,
+		opacity: 0,
+		duration: 1,
+		delay: 0.5,
+		scrollTrigger: {
+			trigger: selectoraction,
+			toggleActions: 'play none none reverse',
+			start: '20% 100%',
+			delay: 0.5,
+			// markers: true
+		}
+	});
+});
+
+const actionimg2Scrolll = ['.action2-img-xo']
+
+actionimg2Scrolll.forEach(selectoraction2 =>{
+	gsap.from(selectoraction2, {
+		x: -100,
+		opacity: 0,
+		duration: 1,
+		delay: 0.5,
+		scrollTrigger: {
+			trigger: selectoraction2,
+			toggleActions: 'play none none reverse',
+			start: '30% 100%',
+			delay: 0.5,
+			// markers: true
+		}
+	});
+});
+
+const actionimg3Scrolll = ['.action3-img-xo']
+
+actionimg3Scrolll.forEach(selectoraction3 =>{
+	gsap.from(selectoraction3, {
+		x: -100,
+		opacity: 0,
+		duration: 1,
+		delay: 0.5,
+		scrollTrigger: {
+			trigger: selectoraction3,
+			toggleActions: 'play none none reverse',
+			start: 'top 100%',
+			delay: 0.5,
+			// markers: true
+		}
+	});
+});
+
+const actionimg4Scrolll = ['.action4-img-xo']
+
+actionimg4Scrolll.forEach(selectoraction4 =>{
+	gsap.from(selectoraction4, {
+		x: 100,
+		opacity: 0,
+		duration: 1,
+		delay: 0.5,
+		scrollTrigger: {
+			trigger: selectoraction4,
+			toggleActions: 'play none none reverse',
+			start: 'top 100%',
+			delay: 0.5,
+			// markers: true
+		}
+	});
+});
+
+const actionprocessScrolll = ['.tittle-process-xo', '.text-primary-process']
+
+actionprocessScrolll.forEach(selectotextprocess =>{
+	gsap.from(selectotextprocess, {
+		x: 100,
+		opacity: 0,
+		duration: 1,
+		delay: 0.5,
+		scrollTrigger: {
+			trigger: selectotextprocess,
+			toggleActions: 'play none none reverse',
+			start: '5% 100%',
+			delay: 0.5,
+			// markers: true
+		}
+	});
+});
+
+const actionfooterScrolll = ['.footer-primary']
+
+actionfooterScrolll.forEach(selectorfooter =>{
+	gsap.from(selectorfooter, {
+		y: 100,
+		opacity: 0,
+		duration: 1,
+		delay: 0.5,
+		scrollTrigger: {
+			trigger: selectorfooter,
+			toggleActions: 'play none none reverse',
+			start: '10% 100%',
+			delay: 0.5,
+			// markers: true
+		}
+	});
+});
