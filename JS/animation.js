@@ -265,7 +265,7 @@ actionimgScrolll.forEach(selectoraction =>{
 			toggleActions: 'play none none reverse',
 			start: '20% 100%',
 			delay: 0.5,
-			// markers: true
+			markers: true
 		}
 	});
 });
@@ -283,7 +283,7 @@ actionimg2Scrolll.forEach(selectoraction2 =>{
 			toggleActions: 'play none none reverse',
 			start: '30% 100%',
 			delay: 0.5,
-			// markers: true
+			markers: true
 		}
 	});
 });
@@ -294,14 +294,14 @@ actionimg3Scrolll.forEach(selectoraction3 =>{
 	gsap.from(selectoraction3, {
 		x: -100,
 		opacity: 0,
-		duration: 1,
+		duration: 1.5,
 		delay: 0.5,
 		scrollTrigger: {
 			trigger: selectoraction3,
 			toggleActions: 'play none none reverse',
 			start: 'top 100%',
 			delay: 0.5,
-			// markers: true
+			markers: true
 		}
 	});
 });
@@ -312,14 +312,14 @@ actionimg4Scrolll.forEach(selectoraction4 =>{
 	gsap.from(selectoraction4, {
 		x: 100,
 		opacity: 0,
-		duration: 1,
+		duration: 1.5,
 		delay: 0.5,
 		scrollTrigger: {
 			trigger: selectoraction4,
 			toggleActions: 'play none none reverse',
 			start: 'top 100%',
 			delay: 0.5,
-			// markers: true
+			markers: true
 		}
 	});
 });
@@ -335,7 +335,7 @@ actionprocessScrolll.forEach(selectotextprocess =>{
 		scrollTrigger: {
 			trigger: selectotextprocess,
 			toggleActions: 'play none none reverse',
-			start: '5% 100%',
+			start: '10% 100%',
 			delay: 0.5,
 			// markers: true
 		}
@@ -353,7 +353,7 @@ actionfooterScrolll.forEach(selectorfooter =>{
 		scrollTrigger: {
 			trigger: selectorfooter,
 			toggleActions: 'play none none reverse',
-			start: '10% 100%',
+			start: '20% 100%',
 			delay: 0.5,
 			// markers: true
 		}
