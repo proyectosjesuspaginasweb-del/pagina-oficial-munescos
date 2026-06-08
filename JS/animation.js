@@ -13,10 +13,9 @@
      window.addEventListener("scroll", () =>{
 	const scrollNav = window.scrollY;
 	// Considerar el mismo breakpoint que en CSS (max-width: 769px)
-	const isMobile = window.matchMedia('(max-width: 769px)').matches;
 	
      elementosDOM.forEach(({el, className}) =>{
-         if (!isMobile && scrollNav > 100) {
+         if (scrollNav > 100) {
              el.classList.add(className);
        } else {
         el.classList.remove(className);
